@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Diary' /* title for your website */,
-  tagline: 'A website for testing',
+  title: '日记' /* title for your website */,
+  tagline: 'The Diary of Shiyong Yin',
   url: 'https://your-docusaurus-test-site.com' /* your website url */,
   baseUrl: '/diary/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -41,7 +41,7 @@ const siteConfig = {
     // {doc: 'doc1', label: 'Docs'},
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {blog: true, label: 'Diary'},
   ],
 
   // If you have users set above, you add it here:
