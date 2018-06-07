@@ -50,7 +50,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/logo.png',
   footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+  favicon: 'img/favicon/favicon.ico',
 
   /* colors for website */
   colors: {
@@ -96,6 +96,11 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
+  algolia: {
+    apiKey: '9b85a0f24c9a35cf8632fdf39ec9b796',
+    indexName: 'ysyfff',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 };
 
 module.exports = siteConfig;
