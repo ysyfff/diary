@@ -4,7 +4,7 @@
         <title>日记 Blog</title>
         <link>https://your-docusaurus-test-site.com/diary/blog</link>
         <description>The best place to stay up-to-date with the latest 日记 news and events.</description>
-        <lastBuildDate>Tue, 05 Jun 2018 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Jun 2018 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -12,12 +12,97 @@
             <url>https://your-docusaurus-test-site.com/diary/img/docusaurus.svg</url>
             <link>https://your-docusaurus-test-site.com/diary/blog</link>
         </image>
-        <copyright>Copyright © 2018 Shiyong Yin</copyright>
+        <copyright>Copyright © 2018-2018 Shiyong Yin</copyright>
+        <item>
+            <title><![CDATA[减肥之道]]></title>
+            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/thin.html</link>
+            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/thin.html</guid>
+            <pubDate>Thu, 07 Jun 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="增肥原理"></a><a href="#增肥原理" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>增肥原理</h2>
+<p><img src="/diary/img/碳水化合物.png" alt="碳水化合物">
+由碳、氢和氧三种元素组成，由于它所含的氢氧的比例为二比一，和水一样，故称为碳水化合物</p>
+<p>食物中的碳水化合物分成两类：人可以吸收利用的有效碳水化合物如单糖、双糖、多糖和人不能消化的无效碳水化合物，如纤维素，是人体必须的物质</p>
+<p>碳水化合物只有经过消化分解成葡萄糖·果糖和半乳糖才能被吸收，而果糖和半乳糖又经肝脏转换变成葡萄糖。血中的葡萄糖简称为血糖，少部分血糖直接被组织细胞利用与氧气反应生成二氧化碳和水，放出热量供身体需要</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[问题汇总]]></title>
+            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/problem.html</link>
+            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/problem.html</guid>
+            <pubDate>Thu, 07 Jun 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="portal发布系统发布停服务失败不会更新service脚本"></a><a href="#portal发布系统发布停服务失败不会更新service脚本" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Portal发布系统发布停服务失败不会更新service脚本</h2>
+<p>停服务失败后更新脚本，并再次执行停服务操作</p>
+<h2><a class="anchor" aria-hidden="true" id="portal发布使用node编译会报错-使用yarn则不会"></a><a href="#portal发布使用node编译会报错-使用yarn则不会" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Portal发布使用node编译会报错，使用yarn则不会</h2>
+<p>看到错误是HeadTable报了错误，还以为和rc-table的版本有关，换了版本之后发现不行，应该和rc-table
+版本无关，隐隐感觉是编译打包，或者npm install安装包的问题。后来查出是webpack4需要node的版本
+大于等于6.11.5，这个就比较坑了，而portal还不支持指定node版本进行</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[一个nginx配置]]></title>
+            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/nginx-config.html</link>
+            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/nginx-config.html</guid>
+            <pubDate>Thu, 07 Jun 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="通过80端口分发"></a><a href="#通过80端口分发" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通过80端口分发</h2>
+<pre><code class="hljs css nginx">一个nginx配置
+
+#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+#upstream baidu_server{
+ #   server 111.13.101.208:4</code></pre>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[好用的工具]]></title>
+            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-tool.html</link>
+            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-tool.html</guid>
+            <pubDate>Thu, 07 Jun 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="irvue"></a><a href="#irvue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Irvue</h2>
+<blockquote>
+<p>一款好用的Mac壁纸更换工具，App Store上面有下载</p>
+</blockquote>
+<p><img src="/diary/img/Irvue.jpg" alt="Irvue"></p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[好用的npm包]]></title>
+            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-npm.html</link>
+            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-npm.html</guid>
+            <pubDate>Thu, 07 Jun 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="np"></a><a href="#np" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>np</h2>
+<blockquote>
+<p>npm包发布工具，不如yarn publish好用</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="inquirer"></a><a href="#inquirer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inquirer</h2>
+<blockquote>
+<p>交互式的命令行工具</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="warning"></a><a href="#warning" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>warning</h2>
+<blockquote>
+<p>警告</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="execa"></a><a href="#execa" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>execa</h2>
+<blockquote>
+<p>Promise执行终端命令工具</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="walk-blob"></a><a href="#walk-blob" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>walk, blob</h2>
+<blockquote>
+<p>遍历文件目录</p>
+</blockquote>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[流行框架学习对比]]></title>
-            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/05/framework.html</link>
-            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/05/framework.html</guid>
-            <pubDate>Tue, 05 Jun 2018 06:00:00 GMT</pubDate>
+            <link>https://your-docusaurus-test-site.com/diary/blog/2018/06/06/framework.html</link>
+            <guid>https://your-docusaurus-test-site.com/diary/blog/2018/06/06/framework.html</guid>
+            <pubDate>Wed, 06 Jun 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[<h2><a class="anchor" aria-hidden="true" id="angular系统结构图"></a><a href="#angular系统结构图" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Angular系统结构图</h2>
 <p><img src="/diary/img/Angular系统结构图.png" alt="angular"></p>
 ]]></description>
