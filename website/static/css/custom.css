@@ -1,16 +1,254 @@
 /* your custom css */
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (max-width: 1023px) {}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1500px) {}
+
+body,
+.mainContainer,
+.navGroup ul,
+footer.nav-footer {
+    background: url('/diary/img/bg.jpg') fixed;
 }
 
-@media only screen and (min-width: 1024px) {
+footer .copyright {
+    color: gray;
 }
 
-@media only screen and (max-width: 1023px) {
+footer.nav-footer {
+    box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (min-width: 1400px) {
+.navGroup ul {
+    border: 1px solid #21c555;
+    border-top: none;
 }
 
-@media only screen and (min-width: 1500px) {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-size: 14px;
+}
+
+.onPageNav ul li a {
+    font-size: 12px;
+}
+
+.blogContainer .postHeader p.post-meta {
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.mainContainer .wrapper ol li,
+.mainContainer .wrapper ul li {
+    margin: 0 0 2px 0;
+}
+
+.mainContainer .wrapper ol,
+.mainContainer .wrapper ul {
+    padding: 2px 0 0 24px
+}
+
+blockquote {
+    padding: 0 10px 0 10px;
+    margin: 5px 0;
+    border: 1px solid rgba(33, 197, 85, .7);
+    border-left-width: 5px;
+}
+
+.mainContainer .wrapper blockquote p {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 12px;
+    /* font-style: italic; */
+}
+
+p .container .wrapper h3 {
+    padding-top: 20px;
+    margin: 0;
+}
+
+a {
+    color: #3884FF;
+}
+
+pre code {
+    margin-top: 10px;
+}
+
+/* .mainContainer .wrapper blockquote p {
+    padding: 0;
+} */
+
+.button {
+    border: 1px solid #3884FF;
+    color: #3884FF;
+}
+
+.button:hover {
+    background: #3884FF;
+}
+
+nav.toc .toggleNav .navGroup {
+    margin-bottom: 3px;
+}
+
+nav.toc .toggleNav .navGroup h3 {
+    padding: 8px 10px;
+    font-weight: 400;
+    background: #21c555;
+    margin-bottom: 0;
+}
+
+pre code span {
+    font-size: 12px;
+}
+
+nav.toc .toggleNav ul li a.navItemActive {
+    color: #3884FF;
+}
+
+nav.toc .toggleNav ul li a:hover,
+nav.toc .toggleNav ul li a:focus {
+    color: #3884FF;
+}
+
+.navSearchWrapper .aa-dropdown-menu {
+    border: 1px solid #21c555;
+    box-shadow: #21c555 0 1px 1px;
+}
+
+nav.toc .toggleNav ul {
+    padding: 4px 0 4px 15px;
+}
+
+/* nav.toc .toggleNav .navGroup h3 {
+    padding: 8px 10px;
+    font-weight: 400;
+    background: #21c555;
+} */
+
+nav.toc section .navGroups {
+    background: #f0f0f0;
+}
+
+.mainContainer:not(.blogContainer) .wrapper .post,
+.blogContainer .posts,
+.blogContainer .lonePost {
+    padding-top: 19px;
+}
+
+.onPageNav {
+    top: 90px;
+}
+
+.docsNavContainer {
+    align-self: flex-start;
+    position: sticky;
+    top: 90px;
+}
+
+blockquote {}
+
+code {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #abb2bf;
+    background: #282c34;
+}
+
+img {
+    box-shadow: -2px 2px 6px #21c555;
+}
+
+.fixedHeaderContainer header img {
+    box-shadow: none;
+}
+
+table tr {
+    background: #f0f0f0;
 }

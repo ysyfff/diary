@@ -41,7 +41,7 @@ const siteConfig = {
     // {doc: 'doc1', label: 'Docs'},
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
-    {blog: true, label: 'Diary'},
+    { blog: true, label: 'Diary' },
   ],
 
   // If you have users set above, you add it here:
@@ -54,7 +54,8 @@ const siteConfig = {
 
   /* colors for website */
   colors: {
-    primaryColor: '#ff4081',
+    // primaryColor: '#ff4081',
+    primaryColor: '#21c555',
     secondaryColor: 'blue',
   },
 
@@ -72,13 +73,14 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
-    'Copyright © ' +
+    'Copyright © ' + 
+    '2018-' +
     new Date().getFullYear() +
     ' Shiyong Yin',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: 'atom-one-dark',
   },
 
   // Add custom scripts here that would be placed in <script> tags
@@ -97,3 +99,5 @@ const siteConfig = {
 };
 
 module.exports = siteConfig;
+
+
