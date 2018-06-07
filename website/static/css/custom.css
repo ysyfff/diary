@@ -14,7 +14,7 @@ body,
 .mainContainer,
 .navGroup ul,
 footer.nav-footer {
-    background: url('/diary/img/bg.jpg') fixed;
+    background: url('/diary/img/bg.png') fixed;
 }
 
 footer .copyright {
