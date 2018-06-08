@@ -17,6 +17,11 @@ footer.nav-footer {
     background: url('/diary/img/bg.png') fixed;
 }
 
+article p img,
+article iframe {
+    margin-left: 5px;
+}
+
 footer .copyright {
     color: gray;
 }
@@ -243,6 +248,7 @@ code {
 
 img {
     box-shadow: -2px 2px 6px #21c555;
+    margin-left: 5px;
 }
 
 .fixedHeaderContainer header img {
@@ -259,4 +265,55 @@ table tr {
 
 .fixedHeaderContainer {
     box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.post-content {
+    max-height: 300px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.post-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(-180deg, rgba(230, 233, 202, 0), rgba(230, 233, 202, 1));
+    /* background-image: linear-gradient(-180deg, rgba(33,197,85, 0), rgba(33,197,85, 1)); */
+    height: 90px;
+    width: 100%;
+}
+
+.posts .post {
+    /* border: 1px solid blue;
+    padding: 5px; */
+    box-shadow: 0 0 8px green;
+    padding: 5px 20px;
+}
+
+.container .wrapper .post-content h2 {
+    margin-top: 5px;
+}
+
+.docsNavContainer {
+    margin: 0;
+}
+
+.wrapper {
+    padding-left: 0;
+}
+
+.sideNavVisible .docsNavContainer {
+    margin: 40px 40px 0 0;
+}
+
+.sideNavVisible .wrapper {
+    padding-left: 20px;
+}
+
+.blogContainer .postHeader .authorBlock {
+    display: none;
+}
+
+.sideNavVisible .blogContainer .postHeader .authorBlock {
+    display: flex;
 }
