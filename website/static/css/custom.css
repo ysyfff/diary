@@ -14,7 +14,7 @@ body,
 .mainContainer,
 .navGroup ul,
 footer.nav-footer {
-    background: url('/diary/img/bg.png') fixed;
+    background: rgba(230, 233, 202, 1) url('/diary/img/bg.png') fixed;
 }
 
 article p img,
@@ -233,7 +233,7 @@ nav.toc section .navGroups {
 .docsNavContainer {
     align-self: flex-start;
     position: sticky;
-    top: 90px;
+    top: 70px;
 }
 
 blockquote {}
@@ -304,6 +304,7 @@ table tr {
 
 .sideNavVisible .docsNavContainer {
     margin: 40px 40px 0 0;
+    margin-top: 27px;
 }
 
 .sideNavVisible .wrapper {
