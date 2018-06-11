@@ -268,7 +268,7 @@ table tr {
 }
 
 .post-content {
-    max-height: 300px;
+    max-height: 150px;
     overflow-y: hidden;
     position: relative;
 }
