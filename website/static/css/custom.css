@@ -162,6 +162,7 @@ a {
 
 pre code {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* .mainContainer .wrapper blockquote p {
@@ -239,9 +240,12 @@ nav.toc section .navGroups {
 blockquote {}
 
 code {
-    display: block;
     overflow-x: auto;
-    padding: 0.5em;
+    position: relative;
+    top: -0.05em;
+    margin: 0 0.3em;
+    padding: 0.15em 0.4em;
+    font-size: 12px;
     color: #abb2bf;
     background: #282c34;
 }
