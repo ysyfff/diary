@@ -229,12 +229,15 @@ nav.toc section .navGroups {
 
 .onPageNav {
     top: 90px;
+    /* position: fixed; */
+    /* right: 90px; */
 }
 
 .docsNavContainer {
     align-self: flex-start;
     position: sticky;
-    top: 70px;
+    top: 80px;
+    /* left: 50px; */
 }
 
 blockquote {}
@@ -307,8 +310,7 @@ table tr {
 }
 
 .sideNavVisible .docsNavContainer {
-    margin: 40px 40px 0 0;
-    margin-top: 27px;
+    margin-top: 8px;
 }
 
 .sideNavVisible .wrapper {
@@ -322,3 +324,33 @@ table tr {
 .sideNavVisible .blogContainer .postHeader .authorBlock {
     display: flex;
 }
+
+.wrapper {
+    max-width: 860px;
+    position: relative;
+}
+
+.sideNavVisible .wrapper {
+    max-width: 1200px;
+}
+
+.separateOnPageNav .docsNavContainer {
+    display: none;
+}
+
+.sideNavVisible .docsNavContainer {
+    display: block;
+    width: 220px;
+}
+
+nav.toc {
+    width: auto;
+}
+
+.onPageNav{
+    flex: 0 0 220px;
+}
+/* .sideNavVisible .onPageNav{
+    position: fixed;
+    right: 0;
+} */
