@@ -17,6 +17,10 @@ footer.nav-footer {
     background: rgba(230, 233, 202, 1) url('/diary/img/bg.png') fixed;
 }
 
+.mainContainer{
+    margin-left: 5px;
+}
+
 article p img,
 article iframe {
     margin-left: 5px;
@@ -340,17 +344,34 @@ table tr {
 
 .sideNavVisible .docsNavContainer {
     display: block;
-    width: 220px;
+    width: 200px;
 }
 
 nav.toc {
     width: auto;
 }
 
-.onPageNav{
+.onPageNav {
     flex: 0 0 220px;
 }
+
 /* .sideNavVisible .onPageNav{
     position: fixed;
     right: 0;
 } */
+
+pre {
+    position: relative;
+    max-width: 50rem;
+}
+
+pre code {
+    max-width: 100%;
+}
+
+.mainContainer .wrapper p,
+.blockElement p,
+.mainContainer .wrapper ul li,
+.mainContainer .wrapper ol li{
+    max-width: 49rem;
+}
