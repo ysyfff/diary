@@ -17,7 +17,7 @@ footer.nav-footer {
     background: rgba(230, 233, 202, 1) url('/diary/img/bg.png') fixed;
 }
 
-.mainContainer{
+.mainContainer {
     margin-left: 5px;
 }
 
@@ -129,6 +129,12 @@ video {
 .blogContainer .postHeader p.post-meta {
     margin-top: 8px;
     margin-bottom: 5px;
+}
+
+.blogContainer .postHeader {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
 }
 
 .mainContainer .wrapper ol li,
@@ -326,7 +332,16 @@ table tr {
 }
 
 .sideNavVisible .blogContainer .postHeader .authorBlock {
-    display: flex;
+    display: inline-block;
+}
+
+.post-meta {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.authorBlock {
+    display: inline-block;
 }
 
 .wrapper {
@@ -372,6 +387,6 @@ pre code {
 .mainContainer .wrapper p,
 .blockElement p,
 .mainContainer .wrapper ul li,
-.mainContainer .wrapper ol li{
+.mainContainer .wrapper ol li {
     max-width: 49rem;
 }
