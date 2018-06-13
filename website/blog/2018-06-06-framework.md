@@ -2,6 +2,15 @@
 title: 流行框架学习对比
 author: Shiyong Yin
 ---
+
+## 有安歇流行的前端框架
+
+我认为目前比较流行的框架或者库主要包含vue, react, angular这三个。
+
+> 排名分先后 :)
+
+
+
 ## Angular系统结构图
 
 ![angular](/diary/img/Angular系统结构图.png)
@@ -16,7 +25,7 @@ author: Shiyong Yin
 - 使用了rxjs，学习成本较高
 - 父子组件之间通信步骤繁琐，子向传递数据的参数必须是$event?!
 
-#### 有点
+#### 优点
 
 - ng是一套工具，有自己的打包工具，方便
 
