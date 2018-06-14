@@ -2,12 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-test-site.com/diary/blog</id>
     <title>日记 Blog</title>
-    <updated>2018-06-12T06:00:00Z</updated>
+    <updated>2018-06-14T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://your-docusaurus-test-site.com/diary/blog"/>
     <subtitle>The best place to stay up-to-date with the latest 日记 news and events.</subtitle>
     <logo>https://your-docusaurus-test-site.com/diary/img/logo.png</logo>
     <rights>Copyright © 2018-2018 Shiyong Yin</rights>
+    <entry>
+        <title type="html"><![CDATA[workspaces是什么]]></title>
+        <id>https://your-docusaurus-test-site.com/diary/blog/2018/06/14/workspaces.html</id>
+        <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/14/workspaces.html">
+        </link>
+        <updated>2018-06-14T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>感觉vue-cli写得相当不错，想瞅瞅源码，于是就进入package.json中找找main字段吧，因为main
+字段就是工程的入口文件嘛。</p>
+<p>上下看了三遍，卧槽，没有！</p>
+<p>好吧，main字段没有，bin总该有吧。</p>
+<p>上下又看了三遍，卧槽，还是没有，唯一可疑的发现了个workspaces字段。</p>
+<h2><a class="anchor" aria-hidden="true" id="寻找"></a><a href="#寻找" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>寻找</h2>
+<p>你牛B，那就去npm官网瞅瞅workspaces字段是什么意思吧。</p>
+<p>卧槽，无此字段的介绍。瞬间一脸的懵逼。</p>
+<p>后来各种搜索why package.json no main keyword</p>
+]]></summary>
+        <author>
+            <name>Shiyong Yin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[本地测试npm包]]></title>
         <id>https://your-docusaurus-test-site.com/diary/blog/2018/06/12/local-test-npm-package.html</id>
@@ -33,7 +53,7 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[谈谈Version]]></title>
+        <title type="html"><![CDATA[谈谈version]]></title>
         <id>https://your-docusaurus-test-site.com/diary/blog/2018/06/08/version.html</id>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/08/version.html">
         </link>

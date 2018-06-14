@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>workspaces是什么 · 日记</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="感觉vue-cli写得相当不错，想瞅瞅源码，于是就进入package.json中找找main字段吧，因为main"/><meta property="og:title" content="workspaces是什么 · 日记"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/diary/blog/2018/06/14/workspaces.html"/><meta property="og:description" content="感觉vue-cli写得相当不错，想瞅瞅源码，于是就进入package.json中找找main字段吧，因为main"/><meta property="og:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><link rel="shortcut icon" href="/diary/img/favicon/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/diary/blog/atom.xml" title="日记 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/diary/blog/feed.xml" title="日记 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/diary/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/diary/"><img class="logo" src="/diary/img/logo.png" alt="日记"/><h2 class="headerTitleWithLogo">日记</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/diary/blog" target="_self">Diary</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>All Blog Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>All Blog Posts</h3><ul><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/diary/blog/2018/06/14/workspaces.html">workspaces是什么</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/12/local-test-npm-package.html">本地测试npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/08/version.html">谈谈version</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/thin.html">减肥之道</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/problem.html">问题汇总</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/nginx-config.html">一个nginx配置</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-tool.html">好用的工具</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-npm.html">好用的npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/06/framework.html">流行框架学习对比</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer documentContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1><a href="/diary/blog/2018/06/14/workspaces.html">workspaces是什么</a></h1><p class="post-meta">June 14, 2018</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">Shiyong Yin</a></p></div></header><div><span><p>感觉vue-cli写得相当不错，想瞅瞅源码，于是就进入package.json中找找main字段吧，因为main
+字段就是工程的入口文件嘛。</p>
+<p>上下看了三遍，卧槽，没有！</p>
+<p>好吧，main字段没有，bin总该有吧。</p>
+<p>上下又看了三遍，卧槽，还是没有，唯一可疑的发现了个workspaces字段。</p>
+<h2><a class="anchor" aria-hidden="true" id="寻找"></a><a href="#寻找" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>寻找</h2>
+<p>你牛B，那就去npm官网瞅瞅workspaces字段是什么意思吧。</p>
+<p>卧槽，无此字段的介绍。瞬间一脸的懵逼。</p>
+<p>后来各种搜索why package.json no main keyword，未找到答案</p>
+<h2><a class="anchor" aria-hidden="true" id="结果"></a><a href="#结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>结果</h2>
+<p>最后尝试了下package.json workspaces关键词的搜索，找到了yarn的一篇文章(<a href="https://yarnpkg.com/blog/2017/08/02/introducing-workspaces/">原文传送门</a>)，柳暗花明又一村了。</p>
+<p>大概意思是，随着时间的推移我们的项目会变得越来越大，模块越来越多。这时候有两种解决方案。</p>
+<ol>
+<li>将子模块放到其他repo中来进行管理，但是你会发现负担很重，需要多个地方写代码，多个地方处理issue等</li>
+<li>将所有模块进行拆分都放到同一个repo钟来管理</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="monorepos"></a><a href="#monorepos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Monorepos</h2>
+<p>放在同一个repo中来管理的时候通常使用Monorepos的方式来管理此repo，使用这种方式的有很多我们经常使用
+的js包，比如Babel, React, Vue, Angular, Jest等</p>
+<p>然而，仅仅进行拆分并使用Monorepos管理远远是不够的，比如测试，管理依赖，发布多个包等变得复杂起来。
+这是一些工具比如Lerna就派上了用场</p>
+<h2><a class="anchor" aria-hidden="true" id="lerna"></a><a href="#lerna" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lerna</h2>
+<p>Lerna是一个对多个子模块工程管理进行优化的工具。简而言之，Lerna会安装在工程中的每个package，并在
+相互依赖的package之间创建软链接。</p>
+<p>然而，作为一个包管理的装饰器，Lerna不能有效的控制node_module中的内容。
+比如多个子模块都依赖同一个包。Lerna会安装多次而不是一次。</p>
+<h2><a class="anchor" aria-hidden="true" id="workspaces"></a><a href="#workspaces" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Workspaces</h2>
+<p>Workspaces能够让用户根据根package.json中的workspace字段从多个子文件中的package.json中安装以依赖。</p>
+<p>例如Jest的例子</p>
+<p>工程目录结构如下</p>
+<pre><code class="hljs css languages- js">| jest/
+| ---- package.json <span class="hljs-comment">//根package.json</span>
+| ---- packages/
+| -------- jest-matcher-utils/
+| ------------ package.json <span class="hljs-comment">//子package.json</span>
+| -------- jest-diff/
+| ------------ package.json
+...
+</code></pre>
+<p>根package.json内容如下</p>
+<pre><code class="hljs css languages- json">{
+  <span class="hljs-attr">"private"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"jest"</span>,
+  <span class="hljs-attr">"devDependencies"</span>: {
+    <span class="hljs-attr">"chalk"</span>: <span class="hljs-string">"^2.0.1"</span>
+  },
+  <span class="hljs-attr">"workspaces"</span>: [
+    <span class="hljs-string">"packages/*"</span>
+  ]
+}
+</code></pre>
+<p>两个字模块中的package.json如下</p>
+<ol>
+<li>jest-matcher-utils
+<pre><code class="hljs css languages- json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"jest-matcher-utils"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"20.0.3"</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"browser"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"dependencies"</span>: {
+    <span class="hljs-attr">"chalk"</span>: <span class="hljs-string">"^1.1.3"</span>,
+    <span class="hljs-attr">"pretty-format"</span>: <span class="hljs-string">"^20.0.3"</span>
+  }
+}
+</code></pre></li>
+<li>jest-diff (依赖了jest-matcher-utils)
+<pre><code class="hljs css languages- json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"jest-diff"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"20.0.3"</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"browser"</span>: <span class="hljs-string">"..."</span>,
+  <span class="hljs-attr">"dependencies"</span>: {
+    <span class="hljs-attr">"chalk"</span>: <span class="hljs-string">"^1.1.3"</span>,
+    <span class="hljs-attr">"diff"</span>: <span class="hljs-string">"^3.2.0"</span>,
+    <span class="hljs-attr">"jest-matcher-utils"</span>: <span class="hljs-string">"^20.0.3"</span>,
+    <span class="hljs-attr">"pretty-format"</span>: <span class="hljs-string">"^20.0.3"</span>
+  }
+}
+</code></pre></li>
+</ol>
+<p>使用Lerno进行安装结果</p>
+<pre><code class="hljs css languages- js">| jest/
+| ---- node_modules/
+| -------- chalk/
+| ---- package.json
+| ---- packages/
+| -------- jest-matcher-utils/
+| ------------ node_modules/
+| ---------------- chalk/
+| ---------------- pretty-format/
+| ------------ package.json
+| -------- jest-diff/
+| ------------ node_modules/
+| ---------------- chalk/
+| ---------------- diff/
+| ---------------- jest-matcher-utils/  (symlink) -&gt; ../jest-matcher-utils
+| ---------------- pretty-format/
+| ------------ package.json
+...
+</code></pre>
+<p>我们可以看到jest-matcher-utils的冗余</p>
+<p>使用workpaces进行安装</p>
+<pre><code class="hljs">| <span class="hljs-type">jest</span>/
+| <span class="hljs-type">---- node_modules</span>/
+| <span class="hljs-type">-------- chalk</span>/
+| <span class="hljs-type">-------- diff</span>/
+| <span class="hljs-type">-------- pretty</span>-format/
+| <span class="hljs-type">-------- jest</span>-matcher-utils/  (symlink) -&gt; ../packages/jest-matcher-utils
+| <span class="hljs-type">---- package</span>.json
+| <span class="hljs-type">---- packages</span>/
+| <span class="hljs-type">-------- jest</span>-matcher-utils/
+| <span class="hljs-type">------------ node_modules</span>/
+| <span class="hljs-type">---------------- chalk</span>/
+| <span class="hljs-type">------------ package</span>.json
+| <span class="hljs-type">-------- jest</span>-diff/
+| <span class="hljs-type">------------ node_modules</span>/
+| <span class="hljs-type">---------------- chalk</span>/
+| <span class="hljs-type">------------ package</span>.json
+...
+</code></pre>
+<p>我们看到只有一个jest-matcher-utils</p>
+<h2><a class="anchor" aria-hidden="true" id="管理workspaces中的依赖"></a><a href="#管理workspaces中的依赖" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>管理workspaces中的依赖</h2>
+<p>仅仅使用<code>yarn add</code>等命令在workspaces文件家中进行管理即可。</p>
+<pre><code class="hljs css languages- bash">$ <span class="hljs-built_in">cd</span> packages/jest-matcher-utils/
+$ yarn add left-pad
+✨ Done <span class="hljs-keyword">in</span> 1.77s.
+$ git status
+modified: package.json
+modified: ../../yarn.lock
+</code></pre>
+<p>但是注意，workspaces中无yarn.lock，只在root中含有一个yarn.lock</p>
+<h2><a class="anchor" aria-hidden="true" id="整合workspaces和lerna"></a><a href="#整合workspaces和lerna" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>整合workspaces和Lerna</h2>
+<p>workspaces并没有使Lerna过时</p>
+<p>Lerna有他的长处和优点，可以和workspaces共存</p>
+<p>Jest使用yarn来启动工程，使用Lerna来发布。</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/diary/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#寻找">寻找</a></li><li><a href="#结果">结果</a></li><li><a href="#monorepos">Monorepos</a></li><li><a href="#lerna">Lerna</a></li><li><a href="#workspaces">Workspaces</a></li><li><a href="#管理workspaces中的依赖">管理workspaces中的依赖</a></li><li><a href="#整合workspaces和lerna">整合workspaces和Lerna</a></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2018-2018 Shiyong Yin</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: 'ab87fbb1dabfa3bd00662f0f793a313f',
+                indexName: 'ysyfff',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
