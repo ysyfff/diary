@@ -390,3 +390,18 @@ pre code {
 .mainContainer .wrapper ol li {
     max-width: 49rem;
 }
+
+#back-to-top{
+    background: #21c555;
+}
+
+.update{
+    background: rgba(33, 197, 85, .2);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.update h2:first-child{
+    margin-top: 0;
+}
