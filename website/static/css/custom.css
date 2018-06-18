@@ -161,7 +161,7 @@ blockquote {
     /* font-style: italic; */
 }
 
-p .container .wrapper h3 {
+.container .wrapper h3 {
     padding-top: 20px;
     margin: 0;
 }
