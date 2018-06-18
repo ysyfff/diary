@@ -42,6 +42,10 @@ const siteConfig = {
     // {doc: 'doc4', label: 'API'},
     // {page: 'help', label: 'Help'},
     { blog: true, label: 'Diary' },
+    {
+      href: 'https://github.com/ysyfff/diary',
+      label: 'GitHub',
+    },
   ],
 
   // If you have users set above, you add it here:
