@@ -10,6 +10,11 @@
 
 @media only screen and (min-width: 1500px) {}
 
+@font-face {
+    font-family: youku;
+    src: url('youku.ttf');
+}
+
 body,
 .mainContainer,
 .navGroup ul,
@@ -120,6 +125,9 @@ mark,
 audio,
 video {
     font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: youku;
 }
 
 .onPageNav ul li a {
@@ -245,6 +253,7 @@ nav.toc section .navGroups {
 
 .docsNavContainer {
     align-self: flex-start;
+    position: -webkit-sticky;
     position: sticky;
     top: 80px;
     /* left: 50px; */
@@ -391,17 +400,17 @@ pre code {
     max-width: 49rem;
 }
 
-#back-to-top{
+#back-to-top {
     background: #21c555;
 }
 
-.update{
+.update {
     background: rgba(33, 197, 85, .2);
     border-radius: 5px;
     padding: 5px 10px;
     margin-top: 20px;
 }
 
-.update h2:first-child{
+.update h2:first-child {
     margin-top: 0;
 }
