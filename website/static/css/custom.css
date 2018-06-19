@@ -329,7 +329,7 @@ table tr {
     content: "";
     position: absolute;
     bottom: 0;
-    background-image: linear-gradient(-180deg, rgba(230, 233, 202, 0), rgba(230, 233, 202, 1));
+    background-image: linear-gradient(-180deg, rgba(224, 224, 224, 0), rgba(224, 224, 224, 0.7));
     /* background-image: linear-gradient(-180deg, rgba(33,197,85, 0), rgba(33,197,85, 1)); */
     height: 90px;
     width: 100%;
