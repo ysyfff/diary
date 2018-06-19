@@ -15,6 +15,11 @@
     src: url('youku.ttf');
 }
 
+@font-face {
+    font-family: flower;
+    src: url('flower.ttf');
+}
+
 body,
 .mainContainer,
 .navGroup ul,
@@ -127,7 +132,13 @@ video {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: youku;
+    font-family: flower, youku;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif
 }
 
 .onPageNav ul li a {
@@ -413,4 +424,19 @@ pre code {
 
 .update h2:first-child {
     margin-top: 0;
+}
+
+.cv-double {
+    width: 300px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cv-wrapper {
+    display: flex;
+    margin-top: 6px;
+}
+
+.cv-wrapper div {
+    flex: 1;
 }
