@@ -19,7 +19,7 @@
 
 @media only screen and (min-width: 1500px) {}
 
-@font-face {
+/* @font-face {
     font-family: youku;
     src: url('youku.ttf');
 }
@@ -27,7 +27,7 @@
 @font-face {
     font-family: flower;
     src: url('flower.ttf');
-}
+} */
 
 body,
 .mainContainer,
@@ -143,8 +143,6 @@ video {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: flower, youku, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
-    ;
     word-spacing: 2px;
     letter-spacing: 1px;
     color: #393939;
