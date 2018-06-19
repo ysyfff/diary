@@ -464,6 +464,9 @@ pre code {
     flex: 1;
 }
 
+.centers{
+    background: #d8d8d8;
+}
 /* pdf */
 
 /* @import url(./pdf.css); */
