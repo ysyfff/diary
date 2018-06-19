@@ -33,9 +33,10 @@ body,
 .mainContainer,
 .navGroup ul,
 footer.nav-footer {
-    background: #fefefe;
+    background: #fff;
     /* background: rgba(230, 233, 202, 1) url('/diary/img/bg.png') fixed; */
 }
+
 
 .mainContainer {
     margin-left: 5px;
@@ -149,7 +150,7 @@ video {
     color: #393939;
 }
 
-h2{
+h2 {
     border-bottom: 1px solid #ccc;
 }
 
@@ -347,7 +348,9 @@ table tr {
     margin-top: 5px;
 }
 
-.container .wrapper h2 {
+.container .wrapper h2,
+.container .wrapper h3,
+.container .wrapper h4 {
     color: #393939;
 }
 
