@@ -37,7 +37,6 @@ footer.nav-footer {
     /* background: rgba(230, 233, 202, 1) url('/diary/img/bg.png') fixed; */
 }
 
-
 .mainContainer {
     margin-left: 5px;
 }
@@ -462,9 +461,14 @@ pre code {
     flex: 1;
 }
 
-.centers{
+.centers {
     background: #d8d8d8;
 }
+
 /* pdf */
 
 /* @import url(./pdf.css); */
+
+.mainContainer .wrapper li p {
+    padding: 0.5em 0 0 0;
+}
