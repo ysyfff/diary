@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>XML与SVG · 日记</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## XML简介"/><meta property="og:title" content="XML与SVG · 日记"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/diary/blog/2018/06/20/xml-svg.html"/><meta property="og:description" content="## XML简介"/><meta property="og:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><link rel="shortcut icon" href="/diary/img/favicon/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/diary/blog/atom.xml" title="日记 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/diary/blog/feed.xml" title="日记 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener("DOMContentLoaded", function(){
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/diary/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/diary/"><img class="logo" src="/diary/img/logo.svg" alt="日记"/><h2 class="headerTitleWithLogo">日记</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/diary/blog" target="_self">Diary</a></li><li class=""><a href="https://github.com/ysyfff/diary" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>All Blog Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>All Blog Posts</h3><ul><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/diary/blog/2018/06/20/xml-svg.html">XML与SVG</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/16/CV.html">个人简历</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/14/workspaces.html">workspaces是什么</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/12/local-test-npm-package.html">npm包测试之低高级策略</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/08/version.html">谈谈version</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/thin.html">减肥之道</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/problem.html">问题汇总</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/nginx-config.html">一个nginx配置</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-tool.html">好用的工具</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-npm.html">好用的npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/06/framework.html">流行框架学习对比</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer documentContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1><a href="/diary/blog/2018/06/20/xml-svg.html">XML与SVG</a></h1><p class="post-meta">June 20, 2018</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">Shiyong Yin</a></p></div></header><div><span><h2><a class="anchor" aria-hidden="true" id="xml简介"></a><a href="#xml简介" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XML简介</h2>
+<p>XML被设计用来传输和存储数据</p>
+<p>HTML被设计用来显示数据</p>
+<p>XMLHttpRequest是XML的衍生体，它不仅能从服务器取回数据，也能读取本地的xml文件</p>
+<h2><a class="anchor" aria-hidden="true" id="svg简单示例"></a><a href="#svg简单示例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SVG简单示例</h2>
+<blockquote>
+<p>SVG的元素和属性必须按标准格式书写，因为XML是区分大小写的（这一点和html不同）</p>
+</blockquote>
+<blockquote>
+<p>SVG里的属性值必须用引号引起来，就算是数值也必须这样做。</p>
+</blockquote>
+<pre><code class="hljs css languages- svg">&lt;?xml version=<span class="hljs-string">"1.0"</span> standalone=<span class="hljs-string">"no"</span>?&gt;
+&lt;svg
+  version=<span class="hljs-string">"1.1"</span>
+  baseProfile=<span class="hljs-string">"full"</span>
+  <span class="hljs-built_in">width</span>=<span class="hljs-string">"300"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"200"</span>
+  xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;
+  &lt;<span class="hljs-built_in">rect</span> <span class="hljs-built_in">width</span>=<span class="hljs-string">"100%"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"100%"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span> /&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"150"</span> cy=<span class="hljs-string">"100"</span> r=<span class="hljs-string">"80"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"green"</span> /&gt;
+  &lt;<span class="hljs-built_in">text</span> x=<span class="hljs-string">"150"</span> y=<span class="hljs-string">"125"</span> font-<span class="hljs-built_in">size</span>=<span class="hljs-string">"60"</span> <span class="hljs-built_in">text</span>-anchor=<span class="hljs-string">"middle"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"white"</span>&gt;SVG&lt;/<span class="hljs-built_in">text</span>&gt;
+&lt;/svg&gt;
+</code></pre>
+<?xml version="1.0" standalone="no"?>
+<svg
+  version="1.1"
+  baseProfile="full"
+  width="300" height="200"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="red" />
+  <circle cx="150" cy="100" r="80" fill="green" />
+  <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+</svg>
+<p>HTML中如何引入SVG</p>
+<ul>
+<li>如果HTML是XHTML并且声明类型为application/xhtml+xml，可以直接把SVG嵌入到XML源码中</li>
+<li>如果HTML是HTML5并且浏览器支持HTML5，同样可以直接嵌入SVG。然而为了符合HTML5标准，可能需要做一些语法调整。</li>
+<li>可以通过 object 元素引用SVG文件</li>
+<li>类似的也可以使用 iframe 元素引用SVG文件：</li>
+<li>理论上同样可以使用 img 元素，但是在低于4.0版本的Firefox 中不起作用。</li>
+<li>最后SVG可以通过JavaScript动态创建并注入到HTML DOM中。 这样具有一个优点，可以对浏览器使用替代技术，在不能解析SVG的情况下，可以替换创建的内容。</li>
+</ul>
+<p>服务器返回头部信息</p>
+<ul>
+<li>Content-Type: image/svg+xml</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="什么是像素"></a><a href="#什么是像素" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>什么是像素</h2>
+<p>基本上，在 SVG 文档中的1个像素对应输出设备（比如显示屏）上的1个像素。但是这种情况是可以改变的，否则 SVG 的名字里也不至于会有“Scalable”（可缩放）这个∫词</p>
+<h2><a class="anchor" aria-hidden="true" id="基本图形"></a><a href="#基本图形" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基本图形</h2>
+<pre><code class="hljs css languages- svg">&lt;?xml version=<span class="hljs-string">"1.0"</span> standalone=<span class="hljs-string">"no"</span>?&gt;
+&lt;svg <span class="hljs-built_in">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"250"</span> version=<span class="hljs-string">"1.1"</span> xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;
+  &lt;<span class="hljs-built_in">rect</span> x=<span class="hljs-string">"10"</span> y=<span class="hljs-string">"10"</span> <span class="hljs-built_in">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;<span class="hljs-built_in">rect</span> x=<span class="hljs-string">"60"</span> y=<span class="hljs-string">"10"</span> rx=<span class="hljs-string">"10"</span> ry=<span class="hljs-string">"10"</span> <span class="hljs-built_in">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"25"</span> cy=<span class="hljs-string">"75"</span> r=<span class="hljs-string">"20"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"red"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;ellipse cx=<span class="hljs-string">"75"</span> cy=<span class="hljs-string">"75"</span> rx=<span class="hljs-string">"20"</span> ry=<span class="hljs-string">"5"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"red"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;<span class="hljs-built_in">line</span> x1=<span class="hljs-string">"10"</span> x2=<span class="hljs-string">"50"</span> y1=<span class="hljs-string">"110"</span> y2=<span class="hljs-string">"150"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"orange"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;polyline points=<span class="hljs-string">"60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"</span>
+      <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"orange"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;polygon points=<span class="hljs-string">"50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"</span>
+      <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"green"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M20,230 Q40,205 50,230 T90,230"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"blue"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span>/&gt;
+&lt;/svg&gt;
+</code></pre>
+<?xml version="1.0" standalone="no"?>
+<svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+  <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+  <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+  <line x1="10" x2="50" y1="110" y2="150" stroke="orange" fill="transparent" stroke-width="5"/>
+  <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+      stroke="orange" fill="transparent" stroke-width="5"/>
+  <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+      stroke="green" fill="transparent" stroke-width="5"/>
+  <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+</svg>
+<h3><a class="anchor" aria-hidden="true" id="矩形"></a><a href="#矩形" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>矩形</h3>
+<ul>
+<li>rx
+<ul>
+<li>圆角的x方位的半径</li>
+</ul></li>
+<li>ry
+<ul>
+<li>圆角的y方位的半径</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="圆形"></a><a href="#圆形" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>圆形</h3>
+<ul>
+<li>cx
+<ul>
+<li>圆心x的位置</li>
+</ul></li>
+<li>cy
+<ul>
+<li>圆心y的位置</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="椭圆-ellipse"></a><a href="#椭圆-ellipse" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>椭圆 ellipse</h3>
+<ul>
+<li>rx
+<ul>
+<li>椭圆x的半径</li>
+</ul></li>
+<li>ry
+<ul>
+<li>椭圆y的半径</li>
+</ul></li>
+<li>cx
+<ul>
+<li>椭圆心x的位置</li>
+</ul></li>
+<li>cy
+<ul>
+<li>椭圆心y的位置</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="折现-polyline"></a><a href="#折现-polyline" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>折现 polyline</h3>
+<ul>
+<li>points
+<ul>
+<li>点集数列。每个数字用空白、逗号、终止命令符或者换行符分隔开。每个点必须包含2个数字，一个是x坐标，一个是y坐标。所以点列表 (0,0), (1,1) 和(2,2)可以写成这样：“0 0, 1 1, 2 2”。</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="多边形-polygon"></a><a href="#多边形-polygon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>多边形 polygon</h3>
+<ul>
+<li>points
+<ul>
+<li>点集数列。每个数字用空白符、逗号、终止命令或者换行符分隔开。每个点必须包含2个数字，一个是x坐标，一个是y坐标。所以点列表 (0,0), (1,1) 和(2,2)可以写成这样：“0 0, 1 1, 2 2”。路径绘制完后闭合图形，所以最终的直线将从位置(2,2)连接到位置(0,0)。</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="路径-path"></a><a href="#路径-path" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>路径 path</h3>
+<ul>
+<li>d
+<ul>
+<li>属性d的值是一个“命令+参数”的序列</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="直线路径"></a><a href="#直线路径" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>直线路径</h2>
+<p>直线命令</p>
+<ul>
+<li>M: Move to 因为M命令仅仅是移动画笔，但不画线。所以M命令经常出现在路径的开始处，用来指明从何处开始画。</li>
+<li>能够真正画出线的命令有三个
+<ul>
+<li>L L需要两个参数，分别是一个点的x轴和y轴坐标</li>
+<li>H 水平线</li>
+<li>V 垂直线</li>
+</ul></li>
+<li>Z Z命令会从当前点画一条直线到路径的起点</li>
+</ul>
+<pre><code class="hljs css languages- svg">&lt;?xml version=<span class="hljs-string">"1.0"</span> standalone=<span class="hljs-string">"no"</span>?&gt;
+&lt;svg <span class="hljs-built_in">width</span>=<span class="hljs-string">"100"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"100"</span> version=<span class="hljs-string">"1.1"</span> xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;
+  &lt;path d=<span class="hljs-string">"M10 10 H 90 V 90 H 10 z"</span> <span class="hljs-built_in">stroke</span>-<span class="hljs-built_in">width</span>=<span class="hljs-string">"5"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"blue"</span>&gt;&lt;/path&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"10"</span> cy=<span class="hljs-string">"10"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"90"</span> cy=<span class="hljs-string">"90"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"90"</span> cy=<span class="hljs-string">"10"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"10"</span> cy=<span class="hljs-string">"90"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+&lt;/svg&gt;
+</code></pre>
+<?xml version="1.0" standalone="no"?>
+<svg width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 10 H 90 V 90 H 10 z" stroke-width="5" fill="transparent" stroke="blue"></path>
+  <circle cx="10" cy="10" r="2" fill="red"/>
+  <circle cx="90" cy="90" r="2" fill="red"/>
+  <circle cx="90" cy="10" r="2" fill="red"/>
+  <circle cx="10" cy="90" r="2" fill="red"/>
+</svg>
+<h2><a class="anchor" aria-hidden="true" id="曲线路径"></a><a href="#曲线路径" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>曲线路径</h2>
+<blockquote>
+<p>绘制平滑曲线的命令有三个，其中两个用来绘制贝塞尔曲线，另外一个用来绘制弧形或者说是圆的一部分</p>
+</blockquote>
+<blockquote>
+<p>贝塞尔曲线的类型有很多，但是在path元素里，只存在两种贝塞尔曲线：三次贝塞尔曲线C，和二次贝塞尔曲线Q。</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="贝塞尔曲线"></a><a href="#贝塞尔曲线" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>贝塞尔曲线</h3>
+<p>两个命令</p>
+<ul>
+<li>C
+<ul>
+<li>三次贝塞尔曲线需要定义一个点和两个控制点，所以用C命令创建三次贝塞尔曲线，需要设置三组坐标参数</li>
+</ul></li>
+<li>S
+<ul>
+<li>S命令可以用来创建与之前那些曲线一样的贝塞尔曲线
+<ul>
+<li>如果S命令跟在一个C命令或者另一个S命令的后面，它的第一个控制点，就会被假设成前一个控制点的对称点</li>
+<li>如果S命令单独使用，前面没有C命令或者另一个S命令，那么它的两个控制点就会被假设为同一个点</li>
+</ul></li>
+</ul></li>
+<li>Q</li>
+<li>T</li>
+</ul>
+<pre><code class="hljs css languages- svg">C <span class="hljs-keyword">x</span><span class="hljs-number">1</span> y<span class="hljs-number">1</span>, <span class="hljs-keyword">x</span><span class="hljs-number">2</span> y<span class="hljs-number">2</span>, <span class="hljs-keyword">x</span> y (<span class="hljs-keyword">or</span> <span class="hljs-keyword">c</span> dx<span class="hljs-number">1</span> dy<span class="hljs-number">1</span>, dx<span class="hljs-number">2</span> dy<span class="hljs-number">2</span>, dx dy)
+</code></pre>
+<p>这里的最后一个坐标(x,y)表示的是曲线的终点，另外两个坐标是控制点，(x1,y1)是起点的控制点，(x2,y2)是终点的控制点</p>
+<pre><code class="hljs css languages- svg">&lt;?xml version=<span class="hljs-string">"1.0"</span> standalone=<span class="hljs-string">"no"</span>?&gt;
+&lt;svg <span class="hljs-built_in">width</span>=<span class="hljs-string">"190px"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"160px"</span> version=<span class="hljs-string">"1.1"</span> xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;
+  &lt;path d=<span class="hljs-string">"M10 10 C 20 20, 40 20, 50 10"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M70 10 C 70 20, 120 20, 120 10"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M130 10 C 120 20, 180 20, 170 10"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M10 60 C 20 80, 40 80, 50 60"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M70 60 C 70 80, 110 80, 110 60"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M130 60 C 120 80, 180 80, 170 60"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M10 110 C 20 140, 40 140, 50 110"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M70 110 C 70 140, 110 140, 110 110"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M130 110 C 120 140, 180 140, 170 110"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+&lt;/svg&gt;
+</code></pre>
+<?xml version="1.0" standalone="no"?>
+<svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"/>
+  <path d="M70 10 C 70 20, 120 20, 120 10" stroke="black" fill="transparent"/>
+  <path d="M130 10 C 120 20, 180 20, 170 10" stroke="black" fill="transparent"/>
+  <path d="M10 60 C 20 80, 40 80, 50 60" stroke="black" fill="transparent"/>
+  <path d="M70 60 C 70 80, 110 80, 110 60" stroke="black" fill="transparent"/>
+  <path d="M130 60 C 120 80, 180 80, 170 60" stroke="black" fill="transparent"/>
+  <path d="M10 110 C 20 140, 40 140, 50 110" stroke="black" fill="transparent"/>
+  <path d="M70 110 C 70 140, 110 140, 110 110" stroke="black" fill="transparent"/>
+  <path d="M130 110 C 120 140, 180 140, 170 110" stroke="black" fill="transparent"/>
+  <circle cx="10" cy="10" r="2" fill="red"/>
+  <path d="M10 10 L20 20" stroke="red"></path>
+  <path d="M50 10 L40 20" stroke="red"></path>
+  <circle cx="20" cy="20" r="2" fill="red"/>
+  <circle cx="40" cy="20" r="2" fill="red"/>
+  <circle cx="50" cy="10" r="2" fill="red"/>
+</svg>
+<pre><code class="hljs css languages- svg">&lt;?xml version=<span class="hljs-string">"1.0"</span> standalone=<span class="hljs-string">"no"</span>?&gt;
+&lt;svg <span class="hljs-built_in">width</span>=<span class="hljs-string">"190px"</span> <span class="hljs-built_in">height</span>=<span class="hljs-string">"160px"</span> version=<span class="hljs-string">"1.1"</span> xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;
+  &lt;path d=<span class="hljs-string">"M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"black"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"transparent"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"10"</span> cy=<span class="hljs-string">"80"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"40"</span> cy=<span class="hljs-string">"10"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M 10 80 L 40 10"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"65"</span> cy=<span class="hljs-string">"10"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"95"</span> cy=<span class="hljs-string">"80"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M 65 10 L 95 80"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"150"</span> cy=<span class="hljs-string">"150"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;<span class="hljs-built_in">circle</span> cx=<span class="hljs-string">"125"</span> cy=<span class="hljs-string">"150"</span> r=<span class="hljs-string">"2"</span> <span class="hljs-built_in">fill</span>=<span class="hljs-string">"red"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M 95 80 L 125 150"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"blue"</span>/&gt;
+  &lt;path d=<span class="hljs-string">"M 150 150 L 180 80"</span> <span class="hljs-built_in">stroke</span>=<span class="hljs-string">"blue"</span>/&gt;
+&lt;/svg&gt;
+</code></pre>
+<?xml version="1.0" standalone="no"?>
+<svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent"/>
+  <circle cx="10" cy="80" r="2" fill="red"/>
+  <circle cx="40" cy="10" r="2" fill="red"/>
+  <path d="M 10 80 L 40 10" stroke="red"/>
+  <circle cx="65" cy="10" r="2" fill="red"/>
+  <circle cx="95" cy="80" r="2" fill="red"/>
+  <path d="M 65 10 L 95 80" stroke="red"/>
+  <circle cx="150" cy="150" r="2" fill="red"/>
+  <circle cx="125" cy="150" r="2" fill="red"/>
+  <path d="M 95 80 L 125 150" stroke="blue"/>
+  <path d="M 150 150 L 180 80" stroke="blue"/>
+</svg></span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/diary/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#xml简介">XML简介</a></li><li><a href="#svg简单示例">SVG简单示例</a></li><li><a href="#什么是像素">什么是像素</a></li><li><a href="#基本图形">基本图形</a><ul class="toc-headings"><li><a href="#矩形">矩形</a></li><li><a href="#圆形">圆形</a></li><li><a href="#椭圆-ellipse">椭圆 ellipse</a></li><li><a href="#折现-polyline">折现 polyline</a></li><li><a href="#多边形-polygon">多边形 polygon</a></li><li><a href="#路径-path">路径 path</a></li></ul></li><li><a href="#直线路径">直线路径</a></li><li><a href="#曲线路径">曲线路径</a><ul class="toc-headings"><li><a href="#贝塞尔曲线">贝塞尔曲线</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2018-2018 Shiyong Yin</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: 'ab87fbb1dabfa3bd00662f0f793a313f',
+                indexName: 'ysyfff',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

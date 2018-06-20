@@ -3,6 +3,7 @@
 <url> <loc>https://your-docusaurus-test-site.com/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/en/help.html" /> </url>
 <url> <loc>https://your-docusaurus-test-site.com/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/en/index.html" /> </url>
 <url> <loc>https://your-docusaurus-test-site.com/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/en/users.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/2018/06/20/xml-svg</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://your-docusaurus-test-site.com/2018/06/16/CV</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://your-docusaurus-test-site.com/2018/06/14/workspaces</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://your-docusaurus-test-site.com/2018/06/12/local-test-npm-package</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
