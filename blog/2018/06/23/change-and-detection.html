@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>(译)JS中数据的改变与发现 · 日记</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="[原文传送门](http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="(译)JS中数据的改变与发现 · 日记"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/diary/blog/2018/06/23/change-and-detection.html"/><meta property="og:description" content="[原文传送门](http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html)"/><meta property="og:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><link rel="shortcut icon" href="/diary/img/favicon/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/diary/blog/atom.xml" title="日记 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/diary/blog/feed.xml" title="日记 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener("DOMContentLoaded", function(){
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/diary/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/diary/"><img class="logo" src="/diary/img/logo.svg" alt="日记"/><h2 class="headerTitleWithLogo">日记</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/diary/blog" target="_self">Diary</a></li><li class=""><a href="https://github.com/ysyfff/diary" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>All Blog Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">All Blog Posts</h3><ul><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/26/layout.html">布局</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/module.html">模块化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/attack.html">攻击与安全</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/async.html">异步</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/todo.html">TODO</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/24/React State.html">React状态管理比较</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/performance.html">性能优化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/http.html">HTTP杂记</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/diary/blog/2018/06/23/change-and-detection.html">(译)JS中数据的改变与发现</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/22/css.html">CSS杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/20/xml-svg.html">XML与SVG</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/16/CV.html">个人简历</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/14/workspaces.html">Workspaces是什么</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/12/local-test-npm-package.html">NPM包测试之低高级策略</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/08/version.html">谈谈version</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/thin.html">减肥之道</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/problem.html">问题汇总</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/nginx-config.html">一个nginx配置</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-tool.html">好用的工具</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-npm.html">好用的npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/06/framework.html">流行框架学习对比</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/diary/blog/2018/06/23/change-and-detection.html">(译)JS中数据的改变与发现</a></h1><p class="post-meta">June 23, 2018</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">Shiyon Yin</a></p></div></header><div><span><p><a href="http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html">原文传送门</a></p>
+<p>比较Angular,Ember,React,Backbone的角度有很多，但是也许比较他们是如何管理状态的角度是最有趣的。</p>
+<h2><a class="anchor" aria-hidden="true" id="投影数据"></a><a href="#投影数据" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>投影数据</h2>
+<p>我们可以理解为将我们的数据投影到屏幕上的。比如JS中的对象，数组，字符串是源头，HTML中的forms，links，
+buttons，images等是显示屏幕上的内容。</p>
+<p>我们称之为渲染过程。我们可以认为是数据到可视化界面的投影。当我们根据数据渲染模板的时候，我们得到了代表了我们
+数据的DOM(HTML)。</p>
+<p><img src="/diary/img/onchange_base.svg" alt="onchange_base"></p>
+<p>平常来说这是没有什么问题的。</p>
+<p>假如数据随着时间的改变而改变的话，这就比较有挑战性了。比如用户的操作导致了数的变化，或者什么发生了什么改变了数据。
+UI需要体现出这些变化。<strong>更重要的是，重新构建DOM是花费昂贵的。我们希望最小化的更新节点</strong></p>
+<p><img src="/diary/img/onchange_change.svg" alt="onchange_change"></p>
+<p>这可比只渲染一次UI困难多了，因为牵涉到了状态的变化。我们就从这里探讨上面框架的解决方案与不同之处。</p>
+<h2><a class="anchor" aria-hidden="true" id="服务端渲染-重置全局"></a><a href="#服务端渲染-重置全局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>服务端渲染：重置全局</h2>
+<blockquote>
+<p>没有改变，全局不可变</p>
+</blockquote>
+<p>在大JS的时代之前，每一个点击，没一个表单提交，都会将页面unload掉，从后端请求整个渲染的页面，回来之后，再次渲染。
+这就是所谓的服务端渲染。</p>
+<p><img src="/diary/img/onchange_reload.svg" alt="onchange_reload"></p>
+<p>这种方法前端是不管理任何state的，都由后端处理，前端只是提供下html，css，或许有点点JS。</p>
+<p>显而易见这种方法速度很慢</p>
+<ol>
+<li>UI需要全部渲染</li>
+<li>需要走后端请求，一去一回要不少时间</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="第一代js-手动重新渲染"></a><a href="#第一代js-手动重新渲染" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>第一代JS：手动重新渲染</h2>
+<blockquote>
+<p>我不知道哪些应该重新渲染，你来搞明白</p>
+</blockquote>
+<p>总的来说，数据改变，发出事件，重新渲染UI你来决定。</p>
+<p>第一代框架如backbone, ext, dojo第一次在浏览器中引入了data model，同时也是第一次
+我们需要改变state在浏览器端。<strong>data model的内容改变之后需要你来获取改变然后改变UI</strong>.
+<strong>数据改变的时候回触发一些事件</strong>，但是重新渲染UI是你的责任。</p>
+<p><img src="/diary/img/onchange_manual.svg" alt="onchange_manual"></p>
+<p>到底是渲染一大部分还是渲染一小部分就由你来决定了。灵活性很大，但同时不要忘了性能。</p>
+<h2><a class="anchor" aria-hidden="true" id="手动重新渲染解决方案"></a><a href="#手动重新渲染解决方案" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>手动重新渲染解决方案</h2>
+<h3><a class="anchor" aria-hidden="true" id="emberjs-数据绑定"></a><a href="#emberjs-数据绑定" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ember.js：数据绑定</h3>
+<blockquote>
+<p>我知道什么变化了，也知道哪里需要重新渲染，因为我控制了model和view</p>
+</blockquote>
+<p>总的来说，通过我设计的API来控制Model</p>
+<p>和backbone一样，Ember也会在数据改变的时候发出事件，不同的是，我们把UI绑定到data model上，
+也就是说，有一个数据变化的监听器，在监听器里可以和UI做绑定。这个监听器知道在接收到数据变化的时候
+如何更新UI。(我们可以通过watch来获得变化，并进行UI的绑定)</p>
+<p><img src="/diary/img/onchange_kvo.svg" alt="onchange_kvo"></p>
+<p><strong>最大的不好的地方是，Ember必须永远知道数据的变化，这就要求我们使用Ember设计的一套API。</strong></p>
+<h3><a class="anchor" aria-hidden="true" id="angularjs-脏检查"></a><a href="#angularjs-脏检查" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AngularJS：脏检查</h3>
+<blockquote>
+<p>我不知道什么发生了改变，所以我就检查下所有地方好了</p>
+</blockquote>
+<p>虽然AngularJS也在着手解决手动重新渲染的问题，但是它是从另一个角度解决问题的。</p>
+<p>当我们通过angular模板渲染<code>{{foo.x}}</code>的时候，angular不仅渲染数据，还为这个特殊的值创建了的一个watcher，
+从此以后，只要有变化，它就检查watcher中的值是否变了，如果变了就在UI中重新渲染这个值。整个过程就是脏检查。</p>
+<p><img src="/diary/img/onchange_watch.svg" alt="onchange_watch"></p>
+<p>不好的地方就是，当改变发生的时候，angular并没有深入的探测到具体是哪个数据发生了改变。所以，只要一有情况发生，
+所有的watcher都要跑一遍。</p>
+<p>听起来这是个性能的噩梦，但实际上还是挺快的，因为仅仅是纯JS的逻辑执行，没有牵涉到DOM的更新。但是当UI十分庞大的时候，
+或者需要频繁渲染的时候，额外的优化技巧就是必须的了。</p>
+<p>另外提一下，ES7中的Object.observe对Ember和Angular会十分有帮助，因为这给出了原生的watching在属性的改变上面。</p>
+<h3><a class="anchor" aria-hidden="true" id="react-virtualdom"></a><a href="#react-virtualdom" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>React：VirtualDOM</h3>
+<blockquote>
+<p>我不知道发生了哪些改变，所以我就重新渲染下，看看与之前有什么不同</p>
+</blockquote>
+<p>React和Angular类似，不需要data modal API的支持。那么React是如何根据数据的变化来解决UI的更新的呢？</p>
+<p>React好像将我们带到了服务端渲染的方式。React的做法是从头到尾的渲染了整个UI。</p>
+<p>这听起来是低效的，如果这就是故事的结尾，那确实是。然而，React 用了特殊的方法进行重新渲染。</p>
+<p>当React UI进行渲染的时候，它首先渲染到Virtual DOM里面，并不是真正的DOM，而是一个轻量级的，纯粹的对象和数组的
+JavaScript数据结构，这个数据结构代表了真实的DOM对象图。然后一个单独的进程采用该DOM结构在屏幕上渲染出真实的DOM结构。</p>
+<p><img src="/diary/img/onchange_vdom_initial.svg" alt="onchange_vdom_initial"></p>
+<p>当数据改变的时候，一个新的Virtual DOM被从头的创建。新的Virtual DOM中包含了变化的值。React从这两个Virtual DOM执行
+diff算法。来获取变化的地方。而且只有那些被改变的地方才会被真实DOM重新渲染。</p>
+<p><img src="/diary/img/onchange_vdom_change.svg" alt="onchange_vdom_change"></p>
+<h3><a class="anchor" aria-hidden="true" id="immutable-js"></a><a href="#immutable-js" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Immutable-js</h3>
+<p>尽管React的Virtual DOM已经很快了，但是在UI很大或者需要频繁渲染的时候还是会出现瓶颈。</p>
+<p>问题是真的没有方法能够渲染整个DOM，(UI太大渲染不过来，渲染太快，还没渲染完就需要渲染洗一次了)。除非想Ember一想引入
+一套data model API。</p>
+<p>一个有效的解决的方法就是使用immutable，这和React的Virtual DOM很般配。</p>
+<p>immutable是这么一个原理。正如他的名字一样，你永远不能直接改变一个对象，当时我们可以基于这个对象产生一个新的版本。</p>
+<p>使用immutable的意义就是，我们可以重复使用上次Virtual DOM的那些没有改变的Virtual DOM部分。</p>
+<p><img src="/diary/img/onchange_immutable.svg" alt="onchange_immutable"></p>
+<p>像Ember一样，我们不能使用原生JS对象，必须使用额外的API。但是不同点在于，这次并不是框架的需要，我们使用它因为这是一种
+更好的管理state的方法。这不仅提高新性能，而且是一种文化的象征。</p>
+<h2><a class="anchor" aria-hidden="true" id="总结"></a><a href="#总结" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>总结</h2>
+<p>对改变的发现是UI渲染的核心问题，JS库通过各种各样的途径来解决这个问题。</p>
+<p>EmberJS能够检测到变化，当他们发生的时候，因为EmberJS通过API控制了Model和View，当你调用他们的时候你可以触发事件。</p>
+<p>AngularJS在变化之后去检测变化，通过re-running在UI中所有的绑定来看看值是否发生了改变。</p>
+<p>纯React通过re-render whole UI到一个Virtual DOM然后和就得版本比较来获得改变。不管发生了什么，都补丁到真实DOM上。</p>
+<p>有immutable的React加强了纯React，通过让component快速标记那些没有改变来提升速度，这是性能的选择，同时也是文化的选择。</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/diary/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#投影数据">投影数据</a></li><li><a href="#服务端渲染-重置全局">服务端渲染：重置全局</a></li><li><a href="#第一代js-手动重新渲染">第一代JS：手动重新渲染</a></li><li><a href="#手动重新渲染解决方案">手动重新渲染解决方案</a><ul class="toc-headings"><li><a href="#emberjs-数据绑定">Ember.js：数据绑定</a></li><li><a href="#angularjs-脏检查">AngularJS：脏检查</a></li><li><a href="#react-virtualdom">React：VirtualDOM</a></li><li><a href="#immutable-js">Immutable-js</a></li></ul></li><li><a href="#总结">总结</a></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2018-2018 Shiyong Yin</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: 'ab87fbb1dabfa3bd00662f0f793a313f',
+                indexName: 'ysyfff',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

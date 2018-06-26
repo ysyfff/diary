@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>布局 · 日记</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 固定布局"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="布局 · 日记"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/diary/blog/2018/06/26/layout.html"/><meta property="og:description" content="## 固定布局"/><meta property="og:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><link rel="shortcut icon" href="/diary/img/favicon/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/diary/blog/atom.xml" title="日记 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/diary/blog/feed.xml" title="日记 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener("DOMContentLoaded", function(){
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/diary/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/diary/"><img class="logo" src="/diary/img/logo.svg" alt="日记"/><h2 class="headerTitleWithLogo">日记</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/diary/blog" target="_self">Diary</a></li><li class=""><a href="https://github.com/ysyfff/diary" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>All Blog Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">All Blog Posts</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/diary/blog/2018/06/26/layout.html">布局</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/module.html">模块化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/attack.html">攻击与安全</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/async.html">异步</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/todo.html">TODO</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/24/React State.html">React状态管理比较</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/performance.html">性能优化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/http.html">HTTP杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/change-and-detection.html">(译)JS中数据的改变与发现</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/22/css.html">CSS杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/20/xml-svg.html">XML与SVG</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/16/CV.html">个人简历</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/14/workspaces.html">Workspaces是什么</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/12/local-test-npm-package.html">NPM包测试之低高级策略</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/08/version.html">谈谈version</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/thin.html">减肥之道</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/problem.html">问题汇总</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/nginx-config.html">一个nginx配置</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-tool.html">好用的工具</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-npm.html">好用的npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/06/framework.html">流行框架学习对比</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/diary/blog/2018/06/26/layout.html">布局</a></h1><p class="post-meta">June 26, 2018</p><div class="authorBlock"></div></header><div><span><h2><a class="anchor" aria-hidden="true" id="固定布局"></a><a href="#固定布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>固定布局</h2>
+<p><strong>所有尺寸一律使用px</strong></p>
+<ul>
+<li>优点：简单，无兼容性问题</li>
+<li>缺点：不能根据不同屏幕尺寸，有不同的表现</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="移动端也可采用固定布局"></a><a href="#移动端也可采用固定布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>移动端也可采用固定布局</h3>
+<p>有两种方式</p>
+<ol>
+<li>viewport width 320 + initial-scale
+<ul>
+<li>在viewport meta标签上设置width=320，页面的各个元素也采用px作为单位。</li>
+<li>通过用JS动态修改标签的initial-scale使得页面等比缩放，从而刚好占满整个屏幕。</li>
+</ul></li>
+<li>viewport width 640 + user-scale=no
+<ul>
+<li>页面的各个元素也采用px作为单位</li>
+<li>由于640px超出了手机宽度，浏览器会自动缩小页面至刚好全屏</li>
+</ul></li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="viewport"></a><a href="#viewport" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>viewport</h3>
+<p><strong>手机浏览器</strong>是把页面放在一个虚拟的&quot;窗口&quot;（viewport）中，通常这个虚拟的&quot;窗口&quot;（viewport）比屏幕宽，这样就不用把每个网页挤到很小的窗口中（这样会破坏没有针对手机浏览器优化的网页的布局），用户可以通过平移和缩放来看网页的不同部分。</p>
+<pre><code class="hljs css languages- html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=640, initial-scale=1.0, user-scale=no"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ul>
+<li><strong>width</strong> 控制 viewport 的大小，可以指定的一个值，如 600，或者特殊的值，如 device-width 为设备的宽度（单位为缩放为 100% 时的 CSS 的像素）</li>
+<li><strong>height</strong> 和 width 相对应，指定高度</li>
+<li><strong>initial-scale</strong> 初始缩放比例，也即是当页面第一次 load 的时候缩放比例</li>
+<li><strong>maximum-scale</strong> 允许用户缩放到的最大比例</li>
+<li><strong>minimum-scale</strong> 允许用户缩放到的最小比例</li>
+<li><strong>user-scalable</strong> 用户是否可以手动缩放</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="流式布局"></a><a href="#流式布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>流式布局</h2>
+<p><strong>网页中主要的划分区域的尺寸使用百分数（搭配min-<em>、max-</em>属性使用），例如，设置网页主体的宽度为80%，min-width为960px</strong></p>
+<p>这种布局缺点明显：宽度使用百分比定义，但是高度和文字大小等大都是用px来固定，所以在大屏幕的手机下显示效果会变成有些页面元素宽度被拉的很长，但是高度、文字大小还是和原来一样（即，这些东西无法变得“流式”），显示非常不协调。</p>
+<h2><a class="anchor" aria-hidden="true" id="弹性布局"></a><a href="#弹性布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>弹性布局</h2>
+<p><strong>包裹文字的各元素的尺寸采用em做单位，而页面的主要划分区域的尺寸仍使用百分数或px做单位（同「流式布局」或「固定布局」）</strong></p>
+<p>CSS编写者常常把body元素的font-size设置为62.5%（浏览器默认字体大小16px*62.5%=10px），这样1em便是10px，方便了计算。</p>
+<p><strong>使用了rem单位的弹性布局在移动端也很受欢迎。</strong></p>
+<p><strong>其实，使用vw、vh等后起之秀的单位，可以实现完美的流式布局（高度和文字大小都可以变得“流式”），弹性布局就不再必要了。</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="响应式布局"></a><a href="#响应式布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>响应式布局</h2>
+<p>随着CSS3出现了媒体查询技术，又出现了响应式设计的概念。响应式设计的目标是确保一个页面在所有终端上（各种尺寸的PC、手机、手表、冰箱的Web浏览器等等）都能显示出令人满意的效果，对CSS编写者而言，在实现上不拘泥于具体手法，</p>
+<p><strong>但通常是糅合了流式布局+弹性布局，再搭配媒体查询技术使用。</strong></p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/diary/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#固定布局">固定布局</a><ul class="toc-headings"><li><a href="#移动端也可采用固定布局">移动端也可采用固定布局</a></li><li><a href="#viewport">viewport</a></li></ul></li><li><a href="#流式布局">流式布局</a></li><li><a href="#弹性布局">弹性布局</a></li><li><a href="#响应式布局">响应式布局</a></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2018-2018 Shiyong Yin</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: 'ab87fbb1dabfa3bd00662f0f793a313f',
+                indexName: 'ysyfff',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
