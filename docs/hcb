@@ -5,5 +5,6 @@
 - 安装brew(安装brew的时候会安装command line tools for xcode，同时会安装好git)
 - 安装vscode
 - iterm2
-- zsh
+- nvm https://github.com/creationix/nvm
+- zsh https://github.com/robbyrussell/oh-my-zsh 
 
