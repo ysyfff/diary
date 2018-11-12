@@ -14,21 +14,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/07/13/pi.html">
         </link>
         <updated>2018-07-13T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="购物清单"></a><a href="#购物清单" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>购物清单</h2>
-<ul>
-<li>继电器 3</li>
-<li>二极管 3</li>
-<li>红外感应器 3</li>
-<li>面包板 1</li>
-<li>连接线 公母头 若干</li>
-<li>270欧姆的电阻（若干）</li>
-<li>光线传感器</li>
-</ul>
-<h2><a class="anchor" aria-hidden="true" id="配置pi"></a><a href="#配置pi" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>配置pi</h2>
-<pre><code class="hljs">sudo raspi-<span class="hljs-built_in">config</span>
-</code></pre>
-<p>这里的配置很丰富呢，比如网络配置，比如启动模式配置等等，都可以在这里设置</p>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="购物清单"></a><a href="#购物清单" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>购物清单</h2> <ul> <li>继电器 3</li> <li>二极管 3</li> <li>红外感应器 3</li> <li>面包板 1</li> <li>连接线 公母头 若干</li> <li>270欧姆的电阻（若干）</li> <li>光线传感器</li> </ul> <h2><a class="anchor" aria-hidden="true" id="配置pi"></a><a href="#配置pi" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>配置pi</h2> <pre><code class="hljs">sudo raspi-<span class="hljs-built_in">config</span> </code></pre> <p>这里的配置很丰富呢，比如网络配置，比如启动模式配置等等，都可以在这里设置</p> ]]></summary>
         <author>
         </author>
     </entry>
@@ -38,23 +24,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/26/layout.html">
         </link>
         <updated>2018-06-26T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="固定布局"></a><a href="#固定布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>固定布局</h2>
-<p><strong>所有尺寸一律使用px</strong></p>
-<ul>
-<li>优点：简单，无兼容性问题</li>
-<li>缺点：不能根据不同屏幕尺寸，有不同的表现</li>
-</ul>
-<h3><a class="anchor" aria-hidden="true" id="移动端也可采用固定布局"></a><a href="#移动端也可采用固定布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>移动端也可采用固定布局</h3>
-<p>有两种方式</p>
-<ol>
-<li>viewport width 320 + initial-scale
-<ul>
-<li>在viewport meta标签上设置width=320，页面的各个元素也采用px作为单位。</li>
-<li>通过用JS动态修改标签的initial-scale使得页面等比缩放，从而刚好占满整个屏幕。</li>
-</ul></li>
-<li>viewport width 64</li>
-</ol>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="固定布局"></a><a href="#固定布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>固定布局</h2> <p><strong>所有尺寸一律使用px</strong></p> <ul> <li>优点：简单，无兼容性问题</li> <li>缺点：不能根据不同屏幕尺寸，有不同的表现</li> </ul> <h3><a class="anchor" aria-hidden="true" id="移动端也可采用固定布局"></a><a href="#移动端也可采用固定布局" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>移动端也可采用固定布局</h3> <p>有两种方式</p> <ol> <li>viewport width 320 + initial-scale <ul> <li>在viewport meta标签上设置width=320，页面的各个元素也采用px作为单位。</li> <li>通过用JS动态修改标签的initial-scale使得页面等比缩放，从而刚好占满整个屏幕。</li> </ul></li> <li>viewport width 640 + user-scale=no <ul> <li>页面的各个元素也采用px作...</li></ul></li></ol>]]></summary>
         <author>
         </author>
     </entry>
@@ -64,28 +34,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/25/module.html">
         </link>
         <updated>2018-06-25T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="无模块化的时代"></a><a href="#无模块化的时代" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>无模块化的时代</h2>
-<blockquote>
-<p>开始的开始，我们都是孩子。</p>
-</blockquote>
-<p>最开始是没有模块化这一说的，都是script标签异步引入。</p>
-<h2><a class="anchor" aria-hidden="true" id="commonjs"></a><a href="#commonjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CommonJS</h2>
-<p>服务端的JavaScript——Nodejs使用了CommonJS并将其发扬光大，这标志着JavaScript模块化正式登上历史的舞台。</p>
-<ol>
-<li>定义模块
-<ul>
-<li>每个文件就是一个模块，每个模块都是一个单独的作用域</li>
-</ul></li>
-<li>模块输出
-<ul>
-<li>模块只有一个出口module.exports</li>
-</ul></li>
-<li>加载模块
-<ul>
-<li>require('lodash')</li>
-</ul></li>
-</ol>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="无模块化的时代"></a><a href="#无模块化的时代" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>无模块化的时代</h2> <blockquote> <p>开始的开始，我们都是孩子。</p> </blockquote> <p>最开始是没有模块化这一说的，都是script标签异步引入。</p> <h2><a class="anchor" aria-hidden="true" id="commonjs"></a><a href="#commonjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>CommonJS</h2> <p>服务端的JavaScript——Nodejs使用了CommonJS并将其发扬光大，这标志着JavaScript模块化正式登上历史的舞台。</p> <ol> <li>定义模块 <ul> <li>每个文件就是一个模块，每个模块都是一个单独的作用域</li> </ul></li> <li>模块输出 <ul> <li>模块只有一个出口module.exports</li> </ul></li> <li>加载模块 <ul> <li>require('lodash')</li> </ul></li> </ol> <blockquote> <p>我们发现require是同步的。模块系统需要同步读取模...</p></blockquote>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -96,26 +45,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/25/attack.html">
         </link>
         <updated>2018-06-25T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="xss"></a><a href="#xss" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XSS</h2>
-<h2><a class="anchor" aria-hidden="true" id="sql注入"></a><a href="#sql注入" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL注入</h2>
-<h2><a class="anchor" aria-hidden="true" id="csrf"></a><a href="#csrf" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CSRF</h2>
-<blockquote>
-<p>Cross—Site Request Forgery(伪造)
-跨站点请求伪造</p>
-</blockquote>
-<p>攻击过程</p>
-<ol>
-<li>A访问站点B，并登陆</li>
-<li>B将cookie存于A的浏览器中</li>
-<li>A在B站点登陆的情况下，访问站点C</li>
-<li>站点C利用A在B站点登陆的状态，向A站点发送伪造请求，实施攻击</li>
-</ol>
-<p>防御方法</p>
-<ol>
-<li><p>HTTP Referer</p>
-<p>根据 HTTP 协议，在 HTTP 头中有一个字段叫 Referer，它记录了该 HTTP 请求的来源地址。在通常</p></li>
-</ol>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="xss"></a><a href="#xss" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>XSS</h2> <h2><a class="anchor" aria-hidden="true" id="sql注入"></a><a href="#sql注入" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>SQL注入</h2> <h2><a class="anchor" aria-hidden="true" id="csrf"></a><a href="#csrf" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>CSRF</h2> <blockquote> <p>Cross—Site Request Forgery(伪造) 跨站点请求伪造</p> </blockquote> <p>攻击过程</p> <ol> <li>A访问站点B，并登陆</li> <li>B将cookie存于A的浏览器中</li> <li>A在B站点登陆的情况下，访问站点C</li> <li>站点C利用A在B站点登陆的状态，向A站点发送伪造请求，实施攻击</li> </ol> <p>防御方法</p> <ol> <li><p>HTTP Referer</p> <p>根据 HTTP 协议，在 HTTP 头中有一个字段叫 Referer，它记录了该 HTTP 请求的来源地址。在通常情况下，访问一个安全受限页面的请求来自于同一个网站，比如需要访问 ...</p></li></ol>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -126,23 +56,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/25/async.html">
         </link>
         <updated>2018-06-25T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="promise"></a><a href="#promise" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Promise</h2>
-<h2><a class="anchor" aria-hidden="true" id="异步习题"></a><a href="#异步习题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>异步习题</h2>
-<blockquote>
-<p>为什么最后打印a end ? await会一直阻塞下去，直到线程中所有代码执行完毕？！</p>
-</blockquote>
-<pre><code class="hljs css languages- js"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a start'</span>)
-  <span class="hljs-keyword">let</span> c = <span class="hljs-keyword">await</span> b();
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a end'</span>);
-}
-
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">b</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'b start'</span>);
-  <span class="hljs-keyword">return</span> <span class="hljs-number">12</span>;
-}
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">c</span>(<span class="hljs-params"></span>)</span></code></pre>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="promise"></a><a href="#promise" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Promise</h2> <h2><a class="anchor" aria-hidden="true" id="异步习题"></a><a href="#异步习题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>异步习题</h2> <blockquote> <p>为什么最后打印a end ? await会一直阻塞下去，直到线程中所有代码执行完毕？！</p> </blockquote> <pre><code class="hljs css language-js"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a start'</span>) <span class="hljs-keyword">let</span> c = <span class="hljs-keyword">await</span> b(); <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a end'</span>); } <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">b</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'b start'</span>); <span class="hljs-keyword">return</span> <span class="hljs-number">12</span>; } <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">c</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'c start'</span>) <span class="hljs-keyword">le...</span></code></pre>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -153,28 +67,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/25/todo.html">
         </link>
         <updated>2018-06-25T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<ul>
-<li>原型</li>
-<li>异步</li>
-</ul>
-<ol>
-<li>flex</li>
-<li>throttle</li>
-<li>bind</li>
-<li>arguments</li>
-<li>[]==false</li>
-<li>动态规划</li>
-<li>异步</li>
-<li>let =&gt;</li>
-</ol>
-<p>回答的不好的</p>
-<ul>
-<li>https</li>
-<li><del>csrf</del></li>
-<li>vue react diff</li>
-<li><del>amd cmd</del></li>
-</ul>
-]]></summary>
+        <summary type="html"><![CDATA[<ul> <li>原型</li> <li>异步</li> </ul> <ol> <li>flex</li> <li>throttle</li> <li>bind</li> <li>arguments</li> <li>[]==false</li> <li>动态规划</li> <li>异步</li> <li>let =&gt;</li> </ol> <p>回答的不好的</p> <ul> <li>https</li> <li><del>csrf</del></li> <li>vue react diff</li> <li><del>amd cmd</del></li> </ul> ]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -185,8 +78,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/24/React State.html">
         </link>
         <updated>2018-06-24T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="hd"></a><a href="#hd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>hd</h2>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="hd"></a><a href="#hd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>hd</h2> ]]></summary>
         <author>
         </author>
     </entry>
@@ -196,8 +88,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/23/performance.html">
         </link>
         <updated>2018-06-23T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="优化方法"></a><a href="#优化方法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优化方法</h2>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="优化方法"></a><a href="#优化方法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>优化方法</h2> ]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -208,17 +99,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/23/http.html">
         </link>
         <updated>2018-06-23T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="http-caching"></a><a href="#http-caching" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP caching</h2>
-<p>缓存的种类有很多，大致归为两类：私有与共享缓存。共享缓存能够被多个用户使用。本文主要介绍浏览器与代理缓存，除此之外还有网关
-缓存，CDN，反向代理缓存，负载均衡器等部署在服务器上，为站点和web应用提供更好的稳定性、性能和扩展性。</p>
-<h3><a class="anchor" aria-hidden="true" id="缓存控制"></a><a href="#缓存控制" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>缓存控制</h3>
-<h4><a class="anchor" aria-hidden="true" id="cache-control"></a><a href="#cache-control" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>cache-control</h4>
-<p>HTTP/1.1定义的Cache-Control投用来区分对缓存机制的支持情况，<strong>请求头和响应头都支持这个属性。</strong>
-通过它来定义缓存策略。</p>
-<ul>
-<li>禁止进行缓存</li>
-</ul>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="http-caching"></a><a href="#http-caching" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>HTTP caching</h2> <p>缓存的种类有很多，大致归为两类：私有与共享缓存。共享缓存能够被多个用户使用。本文主要介绍浏览器与代理缓存，除此之外还有网关 缓存，CDN，反向代理缓存，负载均衡器等部署在服务器上，为站点和web应用提供更好的稳定性、性能和扩展性。</p> <h3><a class="anchor" aria-hidden="true" id="缓存控制"></a><a href="#缓存控制" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>缓存控制</h3> <h4><a class="anchor" aria-hidden="true" id="cache-control"></a><a href="#cache-control" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>cache-control</h4> <p>HTTP/1.1定义的Cache-Control投用来区分对缓存机制的支持情况，<strong>请求头和响应头都支持这个属性。</strong> 通过它来定义缓存策略。</p> <ul> <li><p>禁止进行缓存</p> <pre><code class="hljs css language-http"><span class="hljs-attribute">Cache-Control</span>: no-store </code></pre></li> <li><p>强...</p></li></ul>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -229,12 +110,7 @@
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/23/change-and-detection.html">
         </link>
         <updated>2018-06-23T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<p><a href="http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html">原文传送门</a></p>
-<p>比较Angular,Ember,React,Backbone的角度有很多，但是也许比较他们是如何管理状态的角度是最有趣的。</p>
-<h2><a class="anchor" aria-hidden="true" id="投影数据"></a><a href="#投影数据" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>投影数据</h2>
-<p>我们可以理解为将我们的数据投影到屏幕上的。比如JS中的对象，数组，字符串是源头，HTML中的forms，links，
-buttons，images等是显示屏</p>
-]]></summary>
+        <summary type="html"><![CDATA[<p><a href="http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html">原文传送门</a></p> <p>比较Angular,Ember,React,Backbone的角度有很多，但是也许比较他们是如何管理状态的角度是最有趣的。</p> <h2><a class="anchor" aria-hidden="true" id="投影数据"></a><a href="#投影数据" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>投影数据</h2> <p>我们可以理解为将我们的数据投影到屏幕上的。比如JS中的对象，数组，字符串是源头，HTML中的forms，links， buttons，images等是显示屏幕上的内容。</p> <p>我们称之为渲染过程。我们可以认为是数据到可视化界面的投影。当我们根据数据渲染模板的时候，我们得到了代表了我们 数据的DOM(HTML)。</p> <p><img src="/diary/img/onchange_base.svg" alt="onchange_base"></p> <p>平常来说这是没有什么问题的。</p> <p>假如数据随着时...</p>]]></summary>
         <author>
             <name>Shiyon Yin</name>
         </author>
@@ -245,17 +121,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/22/css.html">
         </link>
         <updated>2018-06-22T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="box-sizing"></a><a href="#box-sizing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>box-sizing</h2>
-<p>2个取值(inherit不计算在内)</p>
-<ul>
-<li>content-box 简单来说，整个元素宽度=width+border+margin+padding，高度类似</li>
-<li>border-box  简单来说，整个元素宽度=width，width=内容宽度+border+margin+padding</li>
-</ul>
-<blockquote>
-<p>建议将所有元素的border-boxing都设置为border-box</p>
-</blockquote>
-<h4><a class="anchor" aria-hidden="true" id="示例"></a><a href="#示例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>示例</h4>
-<div style="display: flex;margin-top: 10px;]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="box-sizing"></a><a href="#box-sizing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>box-sizing</h2> <p>2个取值(inherit不计算在内)</p> <ul> <li>content-box 简单来说，整个元素宽度=width+border+margin+padding，高度类似</li> <li>border-box 简单来说，整个元素宽度=width，width=内容宽度+border+margin+padding</li> </ul> <blockquote> <p>建议将所有元素的border-boxing都设置为border-box</p> </blockquote> <h4><a class="anchor" aria-hidden="true" id="示例"></a><a href="#示例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>示例</h4> <div style="display: flex;margin-top: 10px;"> <div style="width: 100px; height: 200px; border: 10px solid #FFC129;"> <div style="width: 100%;"> box-sizing: content-box; width: 100%; padding: 0; borde...</div></div></div>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -266,22 +132,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/20/xml-svg.html">
         </link>
         <updated>2018-06-20T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="xml简介"></a><a href="#xml简介" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XML简介</h2>
-<p>XML被设计用来传输和存储数据</p>
-<p>HTML被设计用来显示数据</p>
-<p>XMLHttpRequest是XML的衍生体，它不仅能从服务器取回数据，也能读取本地的xml文件</p>
-<h2><a class="anchor" aria-hidden="true" id="svg简单示例"></a><a href="#svg简单示例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SVG简单示例</h2>
-<blockquote>
-<p>SVG的元素和属性必须按标准格式书写，因为XML是区分大小写的（这一点和html不同）</p>
-</blockquote>
-<blockquote>
-<p>SVG里的属性值必须用引号引起来，就算是数值也必须这样做。</p>
-</blockquote>
-<pre><code class="hljs css languages- svg"><span class="hljs-meta">&lt;?</span>xml <span class="hljs-built_in">version</span>=<span class="hljs-string">"1.0"</span> standalone=<span class="hljs-string">"no"</span><span class="hljs-meta">?&gt;</span>
-&lt;svg
-  <span class="hljs-built_in">version</span>=<span class="hljs-string">"1.1"</span>
-</code></pre>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="xml简介"></a><a href="#xml简介" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>XML简介</h2> <p>XML被设计用来传输和存储数据</p> <p>HTML被设计用来显示数据</p> <p>XMLHttpRequest是XML的衍生体，它不仅能从服务器取回数据，也能读取本地的xml文件</p> <h2><a class="anchor" aria-hidden="true" id="svg简单示例"></a><a href="#svg简单示例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>SVG简单示例</h2> <blockquote> <p>SVG的元素和属性必须按标准格式书写，因为XML是区分大小写的（这一点和html不同）</p> </blockquote> <blockquote> <p>SVG里的属性值必须用引号引起来，就算是数值也必须这样做。</p> </blockquote> <pre><code class="hljs css language-svg"><span class="hljs-meta">&lt;?xml version="1.0" standalone="no"?&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span> <span class="hljs-attr">baseProfile</span>=<span class="hljs-string">"...</span></span></code></pre>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -292,19 +143,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/16/CV.html">
         </link>
         <updated>2018-06-16T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h1><a class="anchor" aria-hidden="true" id="尹士勇"></a><a href="#尹士勇" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>尹士勇</h1>
-<p><strong>求职意向：前端工程师</strong></p>
-<div class="cv-wrapper">
-<div>电话：(0)188-1096-1061</div>
-<div>性别：男</div>
-</div>
-<div class="cv-wrapper">
-<div>邮箱：braveyin168@outlook.com</div>
-<div >地址：成都市天府新区</div>
-</div>
-<h2><a class="anchor" aria-hidden="true" id="教育背景"></a><a href="#教育背景" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>教育背景</h2>
-<div class="cv-wrapper">
-<div>2010.09~2014.0]]></summary>
+        <summary type="html"><![CDATA[<h1><a class="anchor" aria-hidden="true" id="尹士勇"></a><a href="#尹士勇" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>尹士勇</h1> <p><strong>求职意向：前端工程师</strong></p> <div class="cv-wrapper"> <div>电话：(0)188-1096-1061</div> <div>性别：男</div> </div> <div class="cv-wrapper"> <div>邮箱：braveyin168@outlook.com</div> <div>地址：成都市天府新区</div> </div> <h2><a class="anchor" aria-hidden="true" id="教育背景"></a><a href="#教育背景" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>教育背景</h2> <div class="cv-wrapper"> <div>2010.09~2014.07</div> <div>西南科技大学</div> <div style="flex: 2">计算机科学与技术/本科</div> </div> <h2><a class="anchor" aria-hidden="true" id="工作经历"></a><a href="#工作经历" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>工作经历</h2> <div class="cv-wrapper"> <div>2014.07~至今</div> <div>去哪儿&middot;大住宿</div> <div>前端工程师</div> <div>北京</div> </div> <blockquote> <p>去哪儿是中国领先的旅游搜索引擎，去哪儿是目前全球最大的中文在线旅行网站</p> </blockquote> <p>业务上</p> <ul> <li><p>参与<strong>5</strong>个web网站、<strong>1</strong>个公众号、<strong>1</strong>个H5和<strong>2</strong>个RN项目的开发，目前为<span class="centers">前端负责人</span></p></li> <li><p>酒...</p></li></ul>]]></summary>
         <author>
             <name>尹士勇</name>
         </author>
@@ -315,16 +154,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/14/workspaces.html">
         </link>
         <updated>2018-06-14T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>感觉vue-cli写得相当不错，想瞅瞅源码，于是就进入package.json中找找main字段吧，因为main
-字段就是工程的入口文件嘛。</p>
-<p>上下看了三遍，卧槽，没有！</p>
-<p>好吧，main字段没有，bin总该有吧。</p>
-<p>上下又看了三遍，卧槽，还是没有，唯一可疑的发现了个workspaces字段。</p>
-<h2><a class="anchor" aria-hidden="true" id="寻找"></a><a href="#寻找" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>寻找</h2>
-<p>你牛B，那就去npm官网瞅瞅workspaces字段是什么意思吧。</p>
-<p>卧槽，无此字段的介绍。瞬间一脸的懵逼。</p>
-<p>后来各种搜索why package.json no main keyword</p>
-]]></summary>
+        <summary type="html"><![CDATA[<p>感觉vue-cli写得相当不错，想瞅瞅源码，于是就进入package.json中找找main字段吧，因为main 字段就是工程的入口文件嘛。</p> <p>上下看了三遍，卧槽，没有！</p> <p>好吧，main字段没有，bin总该有吧。</p> <p>上下又看了三遍，卧槽，还是没有，唯一可疑的发现了个workspaces字段。</p> <h2><a class="anchor" aria-hidden="true" id="寻找"></a><a href="#寻找" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>寻找</h2> <p>你牛B，那就去npm官网瞅瞅workspaces字段是什么意思吧。</p> <p>卧槽，无此字段的介绍。瞬间一脸的懵逼。</p> <p>后来各种搜索why package.json no main keyword，未找到答案</p> <h2><a class="anchor" aria-hidden="true" id="结果"></a><a href="#结果" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>结果</h2> ...]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -335,14 +165,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/12/local-test-npm-package.html">
         </link>
         <updated>2018-06-12T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>以下操作是基于yarn的，npm同样有效</p>
-</blockquote>
-<div class="update">
-<h2><a class="anchor" aria-hidden="true" id="20180617更"></a><a href="#20180617更" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2018.06.17更</h2>
-<h3><a class="anchor" aria-hidden="true" id="原文问题"></a><a href="#原文问题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>原文问题</h3>
-<p>在之前介绍的三个方法中，虽然第三个方法看上去很完美。但是依然有一个问题。会出现multi package的问题，这是一个什么问题呢？比如我们的实际工程merchant_fe中引入了react，我们引入的q-antd(q-antd是被测试的包)中也引入了react。那么这时就需要在merchant_fe和q-antd都引入react，他们并没有引用同一个r</p>
-]]></summary>
+        <summary type="html"><![CDATA[<blockquote> <p>以下操作是基于yarn的，npm同样有效</p> </blockquote> <div class="update"> <h2><a class="anchor" aria-hidden="true" id="20180617更"></a><a href="#20180617更" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>2018.06.17更</h2> <h3><a class="anchor" aria-hidden="true" id="原文问题"></a><a href="#原文问题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>原文问题</h3> <p>在之前介绍的三个方法中，虽然第三个方法看上去很完美。但是依然有一个问题。会出现multi package的问题，这是一个什么问题呢？比如我们的实际工程merchant_fe中引入了react，我们引入的q-antd(q-antd是被测试的包)中也引入了react。那么这时就需要在merchant_fe和q-antd都引入react，他们并没有引用同一个react包。</p> <h3><a class="anchor" aria-hidden="true" id="高级策略-jest"></a><a href="#高级策略-jest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>高级策略——jest</h3> <p>那么有没更好的方法来解决测...</p></div>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -353,15 +176,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/08/version.html">
         </link>
         <updated>2018-06-08T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="fekit中的version"></a><a href="#fekit中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fekit中的version</h2>
-<p>fekit会将所有前端文件的version单独打包到一个ver目录下面，然后通过jar包放到后端目录下面，后端运行代码进行版本号的替换。</p>
-<h2><a class="anchor" aria-hidden="true" id="ykit中的version"></a><a href="#ykit中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ykit中的version</h2>
-<p>和fekit基本类似</p>
-<h2><a class="anchor" aria-hidden="true" id="qxf中的version"></a><a href="#qxf中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>qxf中的version</h2>
-<p>和fekit基本类似</p>
-<h2><a class="anchor" aria-hidden="true" id="我眼中的version"></a><a href="#我眼中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>我眼中的version</h2>
-<p>十分纳闷，前端html模板为什么要放在后端？而version的产生却在前端。然后通过前后端关联version，这无疑增加了工作量，还要将对应的version进行对应的替换，</p>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="fekit中的version"></a><a href="#fekit中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>fekit中的version</h2> <p>fekit会将所有前端文件的version单独打包到一个ver目录下面，然后通过jar包放到后端目录下面，后端运行代码进行版本号的替换。</p> <h2><a class="anchor" aria-hidden="true" id="ykit中的version"></a><a href="#ykit中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>ykit中的version</h2> <p>和fekit基本类似</p> <h2><a class="anchor" aria-hidden="true" id="qxf中的version"></a><a href="#qxf中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>qxf中的version</h2> <p>和fekit基本类似</p> <h2><a class="anchor" aria-hidden="true" id="我眼中的version"></a><a href="#我眼中的version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>我眼中的version</h2> <p>十分纳闷，前端html模板为什么要放在后端？而version的产生却在前端。然后通过前后端关联version，这无疑增加了工作量，还要将对应的version进行对应的替换，往往一些新的前端或者后端同学对此一头雾...</p>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -372,12 +187,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/07/thin.html">
         </link>
         <updated>2018-06-07T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="增肥原理"></a><a href="#增肥原理" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>增肥原理</h2>
-<p><img src="/diary/img/碳水化合物.png" alt="碳水化合物">
-由碳、氢和氧三种元素组成，由于它所含的氢氧的比例为二比一，和水一样，故称为碳水化合物</p>
-<p>食物中的碳水化合物分成两类：人可以吸收利用的有效碳水化合物如单糖、双糖、多糖和人不能消化的无效碳水化合物，如纤维素，是人体必须的物质</p>
-<p>碳水化合物只有经过消化分解成葡萄糖·果糖和半乳糖才能被吸收，而果糖和半乳糖又经肝脏转换变成葡萄糖。血中的葡萄糖简称为血糖，少部分血糖直接被组织细胞利用与氧气反应生成二氧化碳和水，放出热量供身体需要</p>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="增肥原理"></a><a href="#增肥原理" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>增肥原理</h2> <p><img src="/diary/img/碳水化合物.png" alt="碳水化合物"> 由碳、氢和氧三种元素组成，由于它所含的氢氧的比例为二比一，和水一样，故称为碳水化合物</p> <p>食物中的碳水化合物分成两类：人可以吸收利用的有效碳水化合物如单糖、双糖、多糖和人不能消化的无效碳水化合物，如纤维素，是人体必须的物质</p> <p>碳水化合物只有经过消化分解成葡萄糖·果糖和半乳糖才能被吸收，而果糖和半乳糖又经肝脏转换变成葡萄糖。血中的葡萄糖简称为血糖，少部分血糖直接被组织细胞利用与氧气反应生成二氧化碳和水，放出热量供身体需要，大部分血糖则存在人体细胞中，如果细胞中储存的葡萄糖已饱和，多余的葡萄糖...</p>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -388,13 +198,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/07/problem.html">
         </link>
         <updated>2018-06-07T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="portal发布系统发布停服务失败不会更新service脚本"></a><a href="#portal发布系统发布停服务失败不会更新service脚本" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Portal发布系统发布停服务失败不会更新service脚本</h2>
-<p>停服务失败后更新脚本，并再次执行停服务操作</p>
-<h2><a class="anchor" aria-hidden="true" id="portal发布使用node编译会报错-使用yarn则不会"></a><a href="#portal发布使用node编译会报错-使用yarn则不会" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Portal发布使用node编译会报错，使用yarn则不会</h2>
-<p>看到错误是HeadTable报了错误，还以为和rc-table的版本有关，换了版本之后发现不行，应该和rc-table
-版本无关，隐隐感觉是编译打包，或者npm install安装包的问题。后来查出是webpack4需要node的版本
-大于等于6.11.5，这个就比较坑了，而portal还不支持指定node版本进行</p>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="portal发布系统发布停服务失败不会更新service脚本"></a><a href="#portal发布系统发布停服务失败不会更新service脚本" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Portal发布系统发布停服务失败不会更新service脚本</h2> <p>停服务失败后更新脚本，并再次执行停服务操作</p> <h2><a class="anchor" aria-hidden="true" id="portal发布使用node编译会报错-使用yarn则不会"></a><a href="#portal发布使用node编译会报错-使用yarn则不会" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Portal发布使用node编译会报错，使用yarn则不会</h2> <p>看到错误是HeadTable报了错误，还以为和rc-table的版本有关，换了版本之后发现不行，应该和rc-table 版本无关，隐隐感觉是编译打包，或者npm install安装包的问题。后来查出是webpack4需要node的版本 大于等于6.11.5，这个就比较坑了，而portal还不支持指定node版本进行安装，更诡异的是，...</p>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -405,21 +209,7 @@ buttons，images等是显示屏</p>
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/07/nginx-config.html">
         </link>
         <updated>2018-06-07T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="通过80端口分发"></a><a href="#通过80端口分发" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通过80端口分发</h2>
-<pre><code class="hljs css languages- nginx">一个nginx配置
-
-#user  nobody;
-worker_processes  1;
-
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
-
-#pid        logs/nginx.pid;
-
-#upstream baidu_server{
- #   server 111.13.101.208:4</code></pre>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="通过80端口分发"></a><a href="#通过80端口分发" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>通过80端口分发</h2> <pre><code class="hljs css language-nginx">一个nginx配置 #user nobody; worker_processes 1; #error_log logs/error.log; #error_log logs/error.log notice; #error_log logs/error.log info; #pid logs/nginx.pid; #upstream baidu_server{ # server 111.13.101.208:443; #} events { worker_connections ...</code></pre>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -430,22 +220,7 @@ worker_processes  1;
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-tool.html">
         </link>
         <updated>2018-06-07T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="irvue"></a><a href="#irvue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Irvue</h2>
-<blockquote>
-<p>一款好用的Mac壁纸更换工具，App Store上面有下载</p>
-</blockquote>
-<p><img src="/diary/img/Irvue.png" alt="Irvue"></p>
-<h2><a class="anchor" aria-hidden="true" id="pixelstyle"></a><a href="#pixelstyle" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PixelStyle</h2>
-<blockquote>
-<p>感觉是轻量版的PS，App Store上面有下载</p>
-</blockquote>
-<p><img src="/diary/img/pixelStyle.png" alt="PixelStyle"></p>
-<h2><a class="anchor" aria-hidden="true" id="iterm2"></a><a href="#iterm2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iTerm2</h2>
-<blockquote>
-<p>Mac下好用的终端工具，<a href="https://www.iterm2.com/">传送门</a></p>
-</blockquote>
-<p><img src="/diary/img/iTerm2.png" alt="iTerm2"></p>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="irvue"></a><a href="#irvue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Irvue</h2> <blockquote> <p>一款好用的Mac壁纸更换工具，App Store上面有下载</p> </blockquote> <p><img src="/diary/img/Irvue.png" alt="Irvue"></p> <h2><a class="anchor" aria-hidden="true" id="pixelstyle"></a><a href="#pixelstyle" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>PixelStyle</h2> <blockquote> <p>感觉是轻量版的PS，App Store上面有下载</p> </blockquote> <p><img src="/diary/img/pixelStyle.png" alt="PixelStyle"></p> <h2><a class="anchor" aria-hidden="true" id="iterm2"></a><a href="#iterm2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>iTerm2</h2> <blockquote> <p>Mac下好用的终端工具，<a href="https://www.iterm2.com/">传送门</a></p> </blockquote> <p><img src="/diary/img/iTerm2.png" alt="iTerm2"></p> ]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -456,36 +231,7 @@ worker_processes  1;
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-npm.html">
         </link>
         <updated>2018-06-07T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<div class="update">
-<h2><a class="anchor" aria-hidden="true" id="20180620更"></a><a href="#20180620更" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2018.06.20更</h2>
-<h3><a class="anchor" aria-hidden="true" id="node-xlsx"></a><a href="#node-xlsx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>node-xlsx</h3>
-<blockquote>
-<p>如题</p>
-</blockquote>
-<h3><a class="anchor" aria-hidden="true" id="colors"></a><a href="#colors" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>colors</h3>
-<blockquote>
-<p>终端输出彩色字体</p>
-</blockquote>
-<h3><a class="anchor" aria-hidden="true" id="opencc"></a><a href="#opencc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>opencc</h3>
-<blockquote>
-<p>处理中文简繁转换</p>
-</blockquote>
-<h3><a class="anchor" aria-hidden="true" id="json5"></a><a href="#json5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>json5</h3>
-<blockquote>
-<p>是JSON的超级，根据ES5.1扩展了很多JSON不支持的特性</p>
-</blockquote>
-</div>
-<div class="update">
-<h2><a class="anchor" aria-hidden="true" id="20180618更"></a><a href="#20180618更" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2018.06.18更</h2>
-<h3><a class="anchor" aria-hidden="true" id="jest"></a><a href="#jest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>jest</h3>
-<blockquote>
-<p>FB出品，javascript代码测试工具</p>
-</blockquote>
-<h3><a class="anchor" aria-hidden="true" id="enzyme"></a><a href="#enzyme" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>enzyme</h3>
-<blockquote>
-<p>ar</p>
-</blockquote>
-]]></summary>
+        <summary type="html"><![CDATA[<div class="update"> <h2><a class="anchor" aria-hidden="true" id="20180620更"></a><a href="#20180620更" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>2018.06.20更</h2> <h3><a class="anchor" aria-hidden="true" id="node-xlsx"></a><a href="#node-xlsx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>node-xlsx</h3> <blockquote> <p>如题</p> </blockquote> <h3><a class="anchor" aria-hidden="true" id="colors"></a><a href="#colors" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>colors</h3> <blockquote> <p>终端输出彩色字体</p> </blockquote> <h3><a class="anchor" aria-hidden="true" id="opencc"></a><a href="#opencc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>opencc</h3> <blockquote> <p>处理中文简繁转换</p> </blockquote> <h3><a class="anchor" aria-hidden="true" id="json5"></a><a href="#json5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>json5</h3> <blockquote> <p>是JSON的超级，根据ES5.1扩展了很多JSON不支持的特性</p> </blockquote> </div> <div class="update"> <h2><a class="anchor" aria-hidden="true" id="20180618更"></a><a href="#20180618更" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>2018.06.18更</h2> <h3><a class="anchor" aria-hidden="true" id="jest"></a><a href="#jest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>jest</h3> <blockquote> <p>FB出品，javascript代码测试工具</p> </blockquote> <h3><a class="anchor" aria-hidden="true" id="enzyme"></a><a href="#enzyme" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>enzyme</h3> <blockquote> <p>aribnb出品，用来测试react的库</p> </blockquote> <h3><a class="anchor" aria-hidden="true" id="prettier"></a><a href="#prettier" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>prettier</h3> <blockquote> <p>有见识的代码格式化工具(甩lint几十条街)</p> </blockquote> <h3><a class="anchor" aria-hidden="true" id="rimraf"></a><a href="#rimraf" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>rimraf</h3> <blockquote> <p>相当于终端中的<code>rm -rf</code></p> </blockquote> </div> <h2><a class="anchor" aria-hidden="true" id="np"></a><a href="#np" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>np</h2> <blockquote> <p>npm包发布工具，不如...</p></blockquote>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>
@@ -496,21 +242,7 @@ worker_processes  1;
         <link href="https://your-docusaurus-test-site.com/diary/blog/2018/06/06/framework.html">
         </link>
         <updated>2018-06-06T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="有哪些流行的前端框架"></a><a href="#有哪些流行的前端框架" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>有哪些流行的前端框架</h2>
-<p>我认为目前比较流行的框架或者库主要包含vue, react, angular这三个。</p>
-<blockquote>
-<p>排名分先后 :)</p>
-</blockquote>
-<h2><a class="anchor" aria-hidden="true" id="angular系统结构图"></a><a href="#angular系统结构图" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Angular系统结构图</h2>
-<p><img src="/diary/img/Angular系统结构图.png" alt="angular"></p>
-<h3><a class="anchor" aria-hidden="true" id="使用心得"></a><a href="#使用心得" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用心得</h3>
-<h4><a class="anchor" aria-hidden="true" id="缺点"></a><a href="#缺点" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>缺点</h4>
-<ul>
-<li>双绑对象的初始值在定义变量时设置不生效，只能在ngOnInit里面设置</li>
-<li>严重依赖ng命令，一般开发都是直接新建文件夹，里面新建个index就可以开始工作了</li>
-<li>条条框框太多，模拟数据复杂，不仅</li>
-</ul>
-]]></summary>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="有哪些流行的前端框架"></a><a href="#有哪些流行的前端框架" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>有哪些流行的前端框架</h2> <p>我认为目前比较流行的框架或者库主要包含vue, react, angular这三个。</p> <blockquote> <p>排名分先后 :)</p> </blockquote> <h2><a class="anchor" aria-hidden="true" id="angular系统结构图"></a><a href="#angular系统结构图" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Angular系统结构图</h2> <p><img src="/diary/img/Angular系统结构图.png" alt="angular"></p> <h3><a class="anchor" aria-hidden="true" id="使用心得"></a><a href="#使用心得" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>使用心得</h3> <h4><a class="anchor" aria-hidden="true" id="缺点"></a><a href="#缺点" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>缺点</h4> <ul> <li>双绑对象的初始值在定义变量时设置不生效，只能在ngOnInit里面设置</li> <li>严重依赖ng命令，一般开发都是直接新建文件夹，里面新建个index就可以开始工作了</li> <li>条条框框太多，模拟数据复杂，不仅用到了service，还用到了InMermoryData等</li> <li>使用了rxjs，学习成本较高</li> <li>父子组件之间通信步骤繁琐，子向父传递数据的参数...</li></ul>]]></summary>
         <author>
             <name>Shiyong Yin</name>
         </author>

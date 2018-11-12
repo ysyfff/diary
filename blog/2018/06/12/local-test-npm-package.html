@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>NPM包测试之低高级策略 · 日记</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&gt; 以下操作是基于yarn的，npm同样有效"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="NPM包测试之低高级策略 · 日记"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/diary/blog/2018/06/12/local-test-npm-package.html"/><meta property="og:description" content="&gt; 以下操作是基于yarn的，npm同样有效"/><meta property="og:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/diary/img/docusaurus.png"/><link rel="shortcut icon" href="/diary/img/favicon/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/diary/blog/atom.xml" title="日记 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/diary/blog/feed.xml" title="日记 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
-        document.addEventListener("DOMContentLoaded", function(){
+        document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
           )
         });
-        </script><link rel="stylesheet" href="/diary/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/diary/"><img class="logo" src="/diary/img/logo.svg" alt="日记"/><h2 class="headerTitleWithLogo">日记</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/diary/blog" target="_self">Diary</a></li><li class=""><a href="https://github.com/ysyfff/diary" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>All Blog Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">All Blog Posts</h3><ul><li class="navListItem"><a class="navItem" href="/diary/blog/2018/07/13/pi.html">树莓派</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/26/layout.html">布局</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/module.html">模块化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/attack.html">攻击与安全</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/async.html">异步</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/todo.html">TODO</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/24/React State.html">React状态管理比较</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/performance.html">性能优化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/http.html">HTTP杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/change-and-detection.html">(译)JS中数据的改变与发现</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/22/css.html">CSS杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/20/xml-svg.html">XML与SVG</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/16/CV.html">个人简历</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/14/workspaces.html">Workspaces是什么</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/diary/blog/2018/06/12/local-test-npm-package.html">NPM包测试之低高级策略</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/08/version.html">谈谈version</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/thin.html">减肥之道</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/problem.html">问题汇总</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/nginx-config.html">一个nginx配置</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-tool.html">好用的工具</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-npm.html">好用的npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/06/framework.html">流行框架学习对比</a></li></ul></div></div></section></div><script>
+        </script><link rel="stylesheet" href="/diary/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/diary/"><img class="logo" src="/diary/img/logo.svg" alt="日记"/><h2 class="headerTitleWithLogo">日记</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/diary/blog/" target="_self">Diary</a></li><li class=""><a href="https://github.com/ysyfff/diary" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>All Blog Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">All Blog Posts</h3><ul><li class="navListItem"><a class="navItem" href="/diary/blog/2018/07/13/pi.html">树莓派</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/26/layout.html">布局</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/module.html">模块化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/attack.html">攻击与安全</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/async.html">异步</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/25/todo.html">TODO</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/24/React State.html">React状态管理比较</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/performance.html">性能优化</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/http.html">HTTP杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/23/change-and-detection.html">(译)JS中数据的改变与发现</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/22/css.html">CSS杂记</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/20/xml-svg.html">XML与SVG</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/16/CV.html">个人简历</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/14/workspaces.html">Workspaces是什么</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/diary/blog/2018/06/12/local-test-npm-package.html">NPM包测试之低高级策略</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/08/version.html">谈谈version</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/thin.html">减肥之道</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/problem.html">问题汇总</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/nginx-config.html">一个nginx配置</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-tool.html">好用的工具</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/07/good-npm.html">好用的npm包</a></li><li class="navListItem"><a class="navItem" href="/diary/blog/2018/06/06/framework.html">流行框架学习对比</a></li></ul></div></div></section></div><script>
             document.addEventListener('DOMContentLoaded', function() {
               createToggler('#navToggler', '#docsNav', 'docsSliderActive');
               createToggler('#tocToggler', 'body', 'tocActive');
@@ -19,6 +19,10 @@
               function createToggler(togglerSelector, targetSelector, className) {
                 var toggler = document.querySelector(togglerSelector);
                 var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
 
                 toggler.onclick = function(event) {
                   event.preventDefault();
@@ -49,10 +53,10 @@
 <li>在修改测试包之后是否能够更新的到：能</li>
 </ul>
 <p>比如要测试q-antd</p>
-<pre><code class="hljs css languages- js"><span class="hljs-keyword">import</span> { Form } <span class="hljs-keyword">from</span> <span class="hljs-string">'absoulte_path|relative_path/to/q-antd'</span>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> { Form } <span class="hljs-keyword">from</span> <span class="hljs-string">'absoulte_path|relative_path/to/q-antd'</span>
 </code></pre>
 <p>这个方法最简单，适用于有个专门的测试工程来做测试这件事情.在实际工程中我们往往是这样引用的</p>
-<pre><code class="hljs css languages- js"><span class="hljs-keyword">import</span> { Form } <span class="hljs-keyword">from</span> <span class="hljs-string">'q-antd'</span>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> { Form } <span class="hljs-keyword">from</span> <span class="hljs-string">'q-antd'</span>
 </code></pre>
 <p>每次测试完还需要改回来，太愚蠢了。</p>
 <p>所以，不建议此方法。</p>
@@ -61,7 +65,7 @@
 <li>在修改测试包之后是否能够更新的到：不能，需要再次pack</li>
 </ul>
 <p>具体步骤如下</p>
-<pre><code class="hljs css languages- bash"><span class="hljs-meta">#!/usr/local/env bash</span>
+<pre><code class="hljs css language-bash"><span class="hljs-meta">#!/usr/local/env bash</span>
 <span class="hljs-built_in">cd</span> path/to/q-antd
 yarn pack
 <span class="hljs-built_in">cd</span> path/to/测试工程
@@ -76,7 +80,7 @@ yarn add absolute_path|realtive_path/to/q-antd/q-antd-version.tgz
 <li>在修改测试包之后是否能够更新的到：能</li>
 </ul>
 <p>具体步骤如下</p>
-<pre><code class="hljs css languages- bash"><span class="hljs-meta">#!/usr/local/env bash</span>
+<pre><code class="hljs css language-bash"><span class="hljs-meta">#!/usr/local/env bash</span>
 <span class="hljs-built_in">cd</span> path/to/q-antd
 yarn link
 <span class="hljs-built_in">cd</span> path/to/测试工程
@@ -86,6 +90,17 @@ yarn link q-antd
 <p>link一次，使用永久</p>
 <p>此乃最佳方法</p>
 </span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/diary/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#20180617更">2018.06.17更</a><ul class="toc-headings"><li><a href="#原文问题">原文问题</a></li><li><a href="#高级策略-jest">高级策略——jest</a></li></ul></li><li><a href="#每次发包真的烦">每次发包真的烦</a></li><li><a href="#方法一-使用路径引用包">方法一、使用路径引用包</a></li><li><a href="#方法二-使用pack">方法二、使用pack</a></li><li><a href="#方法三-完美大招-使用link">方法三、完美大招——使用link</a></li></ul></nav></div><footer class="nav-footer" id="footer"><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2018-2018 Shiyong Yin</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
               var search = docsearch({
                 
                 apiKey: 'ab87fbb1dabfa3bd00662f0f793a313f',

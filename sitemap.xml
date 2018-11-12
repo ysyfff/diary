@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://your-docusaurus-test-site.com/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/en/help.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/en/index.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/en/users.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/07/13/pi.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/26/layout.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/25/module.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/25/attack.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/25/async.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/25/todo.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/24/React State.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/23/performance.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/23/http.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/23/change-and-detection.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/22/css.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/20/xml-svg.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/16/CV.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/14/workspaces.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/12/local-test-npm-package.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/08/version.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/07/thin.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/07/problem.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/07/nginx-config.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/07/good-tool.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/07/good-npm.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/blog/2018/06/06/framework.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://your-docusaurus-test-site.com/docs/doc1.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/docs/doc1.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/docs/doc2.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/docs/doc2.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/docs/doc3.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/docs/doc3.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/docs/doc4.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/docs/doc4.html" /> </url>
-<url> <loc>https://your-docusaurus-test-site.com/docs/doc5.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/docs/doc5.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/en/help.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/en/index.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/en/users.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/07/13/pi.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/26/layout.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/25/module.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/25/attack.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/25/async.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/25/todo.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/24/React State.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/23/performance.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/23/http.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/23/change-and-detection.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/22/css.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/20/xml-svg.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/16/CV.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/14/workspaces.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/12/local-test-npm-package.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/08/version.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/thin.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/problem.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/nginx-config.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-tool.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/07/good-npm.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/blog/2018/06/06/framework.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/docs/doc1.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/docs/doc1.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/docs/doc2.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/docs/doc2.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/docs/doc3.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/docs/doc3.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/docs/doc4.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/docs/doc4.html" /> </url>
+<url> <loc>https://your-docusaurus-test-site.com/diary/docs/doc5.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://your-docusaurus-test-site.com/diary/docs/doc5.html" /> </url>
 </urlset>
