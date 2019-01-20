@@ -146,7 +146,14 @@ video {
     letter-spacing: 1px;
     color: #393939;
 }
-
+h2{
+  margin-bottom: 6px;
+  padding-bottom: 2px;
+}
+dd{
+  padding-left: 30px;
+  margin-bottom: 0.4em;
+}
 h2, h3, h4 {
     border-bottom: 1px solid #ccc;
 }
@@ -455,6 +462,8 @@ pre code {
 .cv-wrapper {
     display: flex;
     margin-top: 6px;
+    position: relative;
+    margin-left: 20px;
 }
 
 .cv-wrapper div {

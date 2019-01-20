@@ -1,5 +1,5 @@
 ---
-title: HTTP杂记
+title: HTTP缓存
 author: Shiyong Yin
 ---
 
@@ -148,7 +148,60 @@ Etag: jdoiaj8383838392983ijaojdosdjiojsdij
 
 原理上面已经讲到
 
-## HTTPS
+## 应用缓存appcache
+
+> 专门为离线应用而设计的缓存
+
+appcache是从浏览器缓存中分出来的一块缓存，要想使用该缓存，使用manifest文件
+
+一个applicationCache对象API
+applicationCache属性
+- status
+applicationCache方法
+- checking
+- error
+- noupdate
+- downloading
+- process
+- updateready
+- cached
+
+## 离线缓存service worker
+
+- [weather pwa](https://ysyfff.github.io/weather/index.html)
+
+## HTTP2
+
+相对于http1.1有以下不同
+- 采用二进制格式
+- 完全多路复用
+- 报头压缩
+- 服务器推送
+
+## HTTPS
+```
+客户端在使用HTTPS方式与Web服务器通信时有以下几个步骤，如图所示。
+
+　　（1）客户使用https的URL访问Web服务器，要求与Web服务器建立SSL连接。
+
+　　（2）Web服务器收到客户端请求后，会将网站的证书信息（证书中包含公钥）传送一份给客户端。
+
+　　（3）客户端的浏览器与Web服务器开始协商SSL连接的安全等级，也就是信息加密的等级。
+
+　　（4）客户端的浏览器根据双方同意的安全等级，建立会话密钥，然后利用网站的公钥将会话密钥加密，并传送给服务器。
+
+　　（5）Web服务器利用自己的私钥解密出会话密钥。
+
+　　（6）Web服务器利用会话密钥加密与客户端之间的通信。
+```
 
 
+## web storage
 
+>  Web Storage API 提供机制， 使浏览器能以一种比使用Cookie更直观的方式存储键/值对。
+
+## indexedDB
+
+> 虽然 Web Storage 对于存储较少量的数据很有用，但对于存储更大量的结构化数据来说，这种方法不太有用。IndexedDB提供了一个解决方案。
+
+>IndexedDB 是一种在用户浏览器中持久存储数据的方法。它允许您不考虑网络可用性，创建具有丰富查询能力的可离线 Web 应用程序。

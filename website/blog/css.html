@@ -1,0 +1,194 @@
+<!-- <div>
+  <div style="float:left; width: 200;background: blue;height: 100%;">444</div>
+  <div style="margin-left: 200px;background: green;height: 100%;">333</div>
+</div> -->
+
+<!-- <div style="display: flex;">
+<div style="width: 200px; background: blue;height: 100%;">333</div>
+<div style="flex: 1; background: green;height: 100%;">555</div>
+</div> -->
+
+<!-- <div style="position: realtive;">
+  <div style="position: absolute;width: 200px;background: blue;height: 100%;">33</div>
+<div style="margin-left: 200px; background: green;height: 100%;">44</div>
+
+</div> -->
+
+<!-- <div style="display: grid;height: 100%;" class="wrapper">
+  <div style="background: blue;">1</div>
+  <div style="background: green;">2</div>
+</div>
+
+<style>
+.wrapper {
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100% 100%;
+}
+</style> -->
+
+<!-- <div class="wrapper wrapper-inline-block wrapper-double-float wrapper-float wrapper-absolute wrapper-float-bfc" id="wrapper">
+  <div class="left">
+    左边固定宽度，高度不固定 </br> </br></br></br>高度有可能会很小，也可能很大。
+  </div>
+  <div class="right">
+    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120px
+  </div>
+</div> -->
+
+<div class="wrap">
+  <div class="left">334oijofjaodij3</div>
+  <div class="mid">3oijoj</div>
+  <div class="right">44jaosdfjoaijfdiajsaoijsdfoaidsjf5</div>
+</div>
+
+<style>
+  .wrap {
+    display: flex;
+  }
+
+  .mid {
+    flex: 1;
+    background: blue;
+    height: 200px;
+  }
+
+  .left,
+  .right {
+    height: 200px;
+    background: green;
+  }
+
+  /* .wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+  }
+
+  .left {
+    width: 120px;
+    border: 5px solid #ddd;
+    height: 200px;
+  }
+
+  .right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+    height: 200px;
+  }
+
+  .wrapper-inline-block {
+    box-sizing: content-box;
+    font-size: 0;
+  } */
+
+  /* .wrapper-inline-block .left,
+  .wrapper-inline-block .right {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    height: 200px;
+    box-sizing: border-box;
+  }
+
+  .wrapper-inline-block .right {
+    width: calc(100% - 140px);
+  } */
+  /* .wrapper-double-float {
+    overflow: auto; 
+    box-sizing: content-box;
+  }
+
+  .wrapper-double-float .left,
+  .wrapper-double-float .right {
+    float: left;
+    height: 200px;
+    box-sizing: border-box;
+  }
+
+  .wrapper-double-float .right {
+    width: calc(100% - 140px);
+  } */
+
+  /* .wrapper-float {
+overflow: hidden;
+}
+
+.wrapper-float .left {
+float: left;
+}
+
+.wrapper-float .right {
+margin-left: 150px;
+} */
+
+  /* .wrapper-absolute .left {
+position: absolute;
+}
+
+.wrapper-absolute .right {
+margin-left: 150px;
+} */
+  /* .wrapper-float-bfc {
+overflow: auto;
+}
+
+.wrapper-float-bfc .left {
+float: left;
+margin-right: 20px;
+}
+
+.wrapper-float-bfc .right {
+margin-left: 0;
+overflow: auto;
+} */
+</style>
+<input id="duplex" />
+<script>
+  // var request = window.indexedDB.open('MyTestDB');
+  // request.onerror = function (e) {
+  //   console.log(e)
+  // }
+  // var db;
+  // request.onsuccess = function (r) {
+  //   console.log(`success ${r}`);
+  //   db = event.target.result;
+
+  // }
+
+  // db.onerror = function (event) {
+  //   // Generic error handler for all errors targeted at this database's
+  //   // requests!
+  //   alert("Database error: " + event.target.errorCode);
+  // };
+  // console.log(request);
+    console.log('gun')
+  // Proxy实现双绑
+  var myUser = {
+    id: 'duplex',
+    name: '' //用来存储和更新input的value值
+  };
+  inputChange(myUser);
+
+  function inputChange(myObject) {
+    // debugger
+    if (!myObject || !myObject.id) return; //如果传入的对象不存在或者没有id属性，return出去
+    const input = document.getElementById(myObject.id); //通过对象里的id从而获取对应id的input标签
+    input.addEventListener('keyup', function (e) {
+      // debugger
+      myObject.name = input.value;
+    });
+  }
+  const inputHandler = {
+    set: function (target, prop, newValue) {
+      // debugger
+      if (prop == 'name' && target.id) { //prop指的是传入的对象里的属性：
+        //更新对象的属性
+        target[prop] = newValue;
+        document.getElementById(target.id).value = newValue;
+        return true; //set方法返回值只有false或true；
+      } else return false;
+    }
+  };
+  var myUserProxy = new Proxy(myUser, inputHandler);
+  console.log(myUserProxy)
+</script>
